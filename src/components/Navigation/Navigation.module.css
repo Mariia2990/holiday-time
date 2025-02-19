@@ -1,8 +1,15 @@
 .container {
-    /* max-width: 1400px; */
+    max-width: 1900px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.languageSwitcher1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 63px;
 }
 
 .nav {
@@ -12,7 +19,11 @@
     flex-direction: row;
     list-style-type: none;
     color: #fff;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    /* margin-right: 64px; */
+    /* margin-left: 292px; */
+    flex-wrap: nowrap;
+    /* margin-right: 64px; */
 }
 
 .link::before {
@@ -60,6 +71,71 @@
     height: 70px;
     margin-right: 292px;
     margin-left: 138px
+}
+
+.lang{
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.langList {
+    position: absolute;
+    top: 105px;
+    right: 55px;
+    background: #202846;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px #c4c4c41a;
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    z-index: 100;
+    min-width: 80px;
+}
+
+.langList li {
+    padding: 8px 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.langList li:hover {
+    background: #ffffff1a;
+}
+
+.langButton {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-right: 8px;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.langButton:hover {
+    background: #c4c4c41a;
+}
+
+.langButton:focus {
+    outline: none;
+    background: rgba(196, 196, 196, 0.2);
+}
+
+.active {
+    font-weight: bold;
+}
+
+.langContainer {
+    position: relative;
+    display: inline-block;
 }
 
 @media screen and (min-width: 768px) {

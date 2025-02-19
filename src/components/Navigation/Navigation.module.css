@@ -2,14 +2,14 @@
     max-width: 1900px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .languageSwitcher1 {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-right: 63px;
+    margin-left: 64px;
 }
 
 .nav {
@@ -26,7 +26,8 @@
     /* margin-right: 64px; */
 }
 
-.link::before {
+.link::before,
+.link::after {
     content: "";
     position: absolute;
     border: 2px solid #fff;

@@ -43,7 +43,7 @@ const SearchForm: FC<SearchFormProps> = ({
 
   return (
     <div className={css.searchForm}>
-        <p className={css.feedbackText}>Зворотній зв'язок</p>
+      <p className={css.feedbackText}>Зворотній зв'язок</p>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
@@ -51,6 +51,10 @@ const SearchForm: FC<SearchFormProps> = ({
       >
         {({ isSubmitting }) => (
           <Form className={css.form}>
+            <div className={css.labelWrapper}>
+            <label htmlFor="query" className={css.label}>
+              Ім'я
+            </label>
             <Field
               className={css.field}
               type="text"
@@ -61,8 +65,12 @@ const SearchForm: FC<SearchFormProps> = ({
               name="query"
               component="div"
               className={css.errorMessage}
-            />
-
+              />
+            </div>
+            <div className={css.labelWrapper}>
+            <label htmlFor="query" className={css.label}>
+              Номер телефону
+            </label>
             <Field
               className={css.field}
               type="tel"
@@ -74,14 +82,15 @@ const SearchForm: FC<SearchFormProps> = ({
               name="number"
               component="div"
               className={css.errorMessage}
-            />
+              />
+            </div>
             <button
               type="submit"
               className={css.buttonForm}
               disabled={isSubmitting}
             >
               Запросити виклик
-              </button>
+            </button>
           </Form>
         )}
       </Formik>

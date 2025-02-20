@@ -1,0 +1,17 @@
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    background: #202846;
+}
+
+.footerText{
+    display: flex;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    color: #eeecf1;
+    padding-top: 21px;
+    padding-bottom: 22px;
+    padding-left: 60px;
+}

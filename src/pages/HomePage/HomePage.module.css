@@ -180,6 +180,7 @@ filter: blur(0.5px);
     height: 412px;
     background: rgba(193, 193, 195, 0.9);
     margin-top: 46px;
+    margin-bottom: 49px;
     padding: 30px 70px;
 }
 
@@ -193,9 +194,9 @@ filter: blur(0.5px);
 .activeVacationTxt{
     display: flex;
     align-items: center;
-background: rgba(234, 234, 235, 0.7);
-width: 632px;
-height: 349px;
+    background: rgba(234, 234, 235, 0.7);
+    width: 632px;
+    height: 349px;
 }
 
 .activeVacationImg1{
@@ -215,3 +216,4 @@ height: 349px;
         text-align: center;
         color: #202846;
 }
+

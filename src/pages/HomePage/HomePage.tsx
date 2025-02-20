@@ -1,8 +1,9 @@
 import { useState } from "react";
 import css from "./HomePage.module.css";
+import SearchForm from "../../components/SearchForm/SearchForm";
 
 const HomePage = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
    const totalSlides = 7;
 
   const handleClick = () => {
@@ -11,15 +12,23 @@ const HomePage = () => {
     // window.location.href = "/new-page";
   };
 
-   const nextSlide = () => {
-     setActiveIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+ const nextSlide = () => {
+   setActiveIndex((prevIndex) =>
+     prevIndex !== null ? (prevIndex + 1) % totalSlides : 0
+   );
+ };
+
+ const prevSlide = () => {
+   setActiveIndex((prevIndex) =>
+     prevIndex !== null
+       ? (prevIndex - 1 + totalSlides) % totalSlides
+       : totalSlides - 1
+   );
   };
   
-    const prevSlide = () => {
-      setActiveIndex(
-        (prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides
-      );
-    };
+  const handleSearchSubmit = (query: string) => {
+    console.log("Searching for:", query);
+  };
 
   return (
     <>
@@ -94,6 +103,7 @@ const HomePage = () => {
             <img
               className={css.activeVacationImg1}
               src="/src/img/image2x.jpg"
+              alt="Active Vacation"
             ></img>
           </div>
           <div className={css.activeVacationTxt}>
@@ -104,6 +114,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <SearchForm onSubmit={handleSearchSubmit} />
     </>
   );
 };

@@ -2,31 +2,23 @@ import { useState } from "react";
 import css from "./HomePage.module.css";
 import SearchForm from "../../components/SearchForm/SearchForm";
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-   const totalSlides = 7;
+  const totalSlides: number = 7;
 
-  const handleClick = () => {
+  const handleClick = (): void => {
     console.log("Кнопка 'Переглянути' натиснута!");
-    // Можна зробити перехід на іншу сторінку, наприклад:
-    // window.location.href = "/new-page";
   };
 
- const nextSlide = () => {
-   setActiveIndex((prevIndex) =>
-     prevIndex !== null ? (prevIndex + 1) % totalSlides : 0
-   );
- };
-
- const prevSlide = () => {
-   setActiveIndex((prevIndex) =>
-     prevIndex !== null
-       ? (prevIndex - 1 + totalSlides) % totalSlides
-       : totalSlides - 1
-   );
+  const nextSlide = (): void => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % totalSlides);
   };
-  
-  const handleSearchSubmit = (query: string) => {
+
+  const prevSlide = (): void => {
+    setActiveIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
+  };
+
+  const handleSearchSubmit = (query: string): void => {
     console.log("Searching for:", query);
   };
 
@@ -57,7 +49,7 @@ const HomePage = () => {
         </button>
 
         <div className={css.circleContainer}>
-          {[...Array(7)].map((_, index) => (
+          {[...Array(totalSlides)].map((_, index) => (
             <span
               key={index}
               className={`${css.circle} ${
@@ -87,10 +79,10 @@ const HomePage = () => {
         <div className={css.strokeLine}>
           <svg id="icon-Group-13-1" viewBox="0 0 19 32" width="51" height="101">
             <path
-              stroke-linejoin="miter"
-              stroke-linecap="butt"
-              stroke-miterlimit="4"
-              stroke-width="1.3115"
+              strokeLinejoin="miter"
+              strokeLinecap="butt"
+              strokeMiterlimit="4"
+              strokeWidth="1.3115"
               d="M3.095 2.704l13.126 13.628M2.675 29.43l12.865-13.36"
             ></path>
           </svg>
@@ -104,11 +96,11 @@ const HomePage = () => {
               className={css.activeVacationImg1}
               src="/src/img/image2x.jpg"
               alt="Active Vacation"
-            ></img>
+            />
           </div>
           <div className={css.activeVacationTxt}>
             <p className={css.txtVacantion}>
-              Активний відпочинок у нетипових лоцаціях. Незаймана природа та
+              Активний відпочинок у нетипових локаціях. Незаймана природа та
               місцевий колорит подарують Вам незабутні враження.
             </p>
           </div>

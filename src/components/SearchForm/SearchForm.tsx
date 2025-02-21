@@ -3,14 +3,21 @@ import * as Yup from "yup";
 import { FC } from "react";
 import css from "./SearchForm.module.css";
 
+interface Contact {
+  query: string;
+  number: string;
+}
+
 interface SearchFormProps {
-  onSubmit: (query: string) => void;
+  onSubmit: (query: string, number: string) => void; 
   initialQuery?: string;
+  contacts?: Contact[]; 
 }
 
 const SearchForm: FC<SearchFormProps> = ({
   onSubmit = () => {},
   initialQuery = "",
+  contacts = [], 
 }) => {
   const validationSchema = Yup.object({
     query: Yup.string()
@@ -32,13 +39,30 @@ const SearchForm: FC<SearchFormProps> = ({
     actions: any
   ) => {
     const trimmedQuery = values.query.trim();
+    const trimmedNumber = values.number.trim();
+
     if (!trimmedQuery) {
       actions.setErrors({ query: "Search query cannot be empty" });
       return;
     }
-    onSubmit(trimmedQuery);
-    console.log("Phone number:", values.number);
+
+    const isDuplicate = contacts.some(
+      (contact) =>
+        contact.query.toLowerCase() === trimmedQuery.toLowerCase() ||
+        contact.number === trimmedNumber
+    );
+
+    if (isDuplicate) {
+      actions.setErrors({
+        query: "Contact with this name or number already exists",
+        number: "Contact with this name or number already exists",
+      });
+      return;
+    }
+
+    onSubmit(trimmedQuery, trimmedNumber);
     actions.setSubmitting(false);
+    actions.resetForm();
   };
 
   return (
@@ -52,36 +76,36 @@ const SearchForm: FC<SearchFormProps> = ({
         {({ isSubmitting }) => (
           <Form className={css.form}>
             <div className={css.labelWrapper}>
-            <label htmlFor="query" className={css.label}>
-              Ім'я
-            </label>
-            <Field
-              className={css.field}
-              type="text"
-              name="query"
-              placeholder="Введіть ім'я "
-            />
-            <ErrorMessage
-              name="query"
-              component="div"
-              className={css.errorMessage}
+              <label htmlFor="query" className={css.label}>
+                Ім'я
+              </label>
+              <Field
+                className={css.field}
+                type="text"
+                name="query"
+                placeholder="Введіть ім'я"
+              />
+              <ErrorMessage
+                name="query"
+                component="div"
+                className={css.errorMessage}
               />
             </div>
             <div className={css.labelWrapper}>
-            <label htmlFor="query" className={css.label}>
-              Номер телефону
-            </label>
-            <Field
-              className={css.field}
-              type="tel"
-              name="number"
-              placeholder="Введіть номер телефону"
-              required
-            />
-            <ErrorMessage
-              name="number"
-              component="div"
-              className={css.errorMessage}
+              <label htmlFor="number" className={css.label}>
+                Номер телефону
+              </label>
+              <Field
+                className={css.field}
+                type="tel"
+                name="number"
+                placeholder="Введіть номер телефону"
+                required
+              />
+              <ErrorMessage
+                name="number"
+                component="div"
+                className={css.errorMessage}
               />
             </div>
             <button

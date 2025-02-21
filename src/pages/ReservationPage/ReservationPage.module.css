@@ -1,0 +1,150 @@
+.reservationBox{
+    display: flex;
+    align-items: center;
+    padding-left: 227px;
+    width: 100%;
+    height: 140px;
+    background: #c6c6dc;
+    margin-bottom: 56px;
+}
+
+.resTitle{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    color: #202846;
+}
+
+.reservationBox2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1489px;
+    height: 73px;
+    background: #e8e8e8;
+    margin: 0 auto;
+    padding: 18px 22px 18px 574px;
+    margin-bottom: 56px;
+}
+
+.reservText{
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.iconRect{
+display: flex;
+}
+
+.subReserve{
+    display: flex;
+}
+
+.reserveHouse{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 1489px;
+    height: 300px;
+    background: #bdbdc6;
+    margin: 0 auto;
+    padding: 28px 0 28px 103px;
+    margin-bottom: 36px;
+}
+
+.reserveHouseContainer{
+    content: "";
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.reserveHouseBakotaBox{
+    margin-right: 102px;
+}
+
+.reserveHouseBakotaBox1{
+display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reserveHouseBakotaBox2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    width: 712px;
+    height: 184px;
+    background: #d7d7dd;
+    margin-right: 20px;
+}
+
+.bakotaImg{
+    max-width: 100%;
+    height: 244px;
+}
+
+.titleBakotaBox{
+   display: block; 
+   align-self: start;
+}
+
+.titleBakota{
+    
+font-style: italic;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #353c57
+}
+
+
+.textBakota{
+font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    color: #202846;
+}
+
+.lineBakota{
+border: 3px solid #fff;
+width: 712px;
+height: 0px;
+}
+
+.star{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonReserve{
+        position: absolute;
+            top: 82%;
+            left: 90%;
+            background-color: #202846;
+            width: 200px;
+            height: 60px;
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: background-color 0.3sease, transform 0.2sease;
+}
+
+.buttonReserveBox{
+
+}

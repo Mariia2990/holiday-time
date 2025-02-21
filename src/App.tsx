@@ -25,7 +25,7 @@ const App = () => {
             path="/reservation/:reservationId/"
             element={<ReservationPage />}
           >
-            <Route path="reserve" element={<HomeReserve />} />
+            <Route path="reservation" element={<HomeReserve />} />
           </Route>
           <Route path="/contacts" element={<ContactsPage />} />
           <Route path="/office" element={<PersonalOffice />} />

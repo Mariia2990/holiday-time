@@ -1,13 +1,16 @@
 import { useState } from "react";
 import css from "./HomePage.module.css";
 import SearchForm from "../../components/SearchForm/SearchForm";
+import { useNavigate } from "react-router-dom";
 
 const HomePage: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const totalSlides: number = 7;
+  const navigate = useNavigate(); 
 
   const handleClick = (): void => {
     console.log("Кнопка 'Переглянути' натиснута!");
+    navigate("/reservation/:reservationId/");
   };
 
   const nextSlide = (): void => {
@@ -41,7 +44,7 @@ const HomePage: React.FC = () => {
             чекають на Вас.
           </p>
         </div>
-        <button className={css.arrowLeft} onClick={prevSlide}>
+        <button className={css.arrowLeft} onClick={prevSlide} >
           ❮
         </button>
         <button className={css.arrowRight} onClick={nextSlide}>

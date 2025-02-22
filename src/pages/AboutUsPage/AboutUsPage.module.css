@@ -1,0 +1,82 @@
+.aboutUsBox{
+    display: flex;
+    padding-left: 227px;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    background: #c6c6dc;
+    margin-bottom: 23px;
+}
+
+.aboutUsTitle{
+    font-style: italic;
+        font-weight: 400;
+        font-size: 48px;
+        color: #202846;
+}
+
+.aboutUsWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/src/img/AboutUs-1x.jpg), url(/src/img/AboutUs-2x.jpg) ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 227px;
+}
+
+.aboutUsTitle2{
+    font-weight: 700;
+        font-size: 48px;
+        text-align: center;
+        color: #fff;
+}
+
+.aboutUsSpan{
+    font-weight: 700;
+    text-align: center;
+        color: #fff;
+    font-style: italic;
+        font-size: 36px;
+}
+
+.aboutUsSpanBox{
+display: flex;
+width: 1099px;
+text-align: center;
+}
+
+.aboutUsBox2{
+    max-width: 100%;
+    margin: 0 auto;
+    height: 380px;
+    padding-left: 74px;
+    padding-top: 30px;
+    margin-top: 23px;
+    /* margin-bottom: 28px; */
+    background: #cbcbcb;
+    /* display: flex;
+    align-items: center;
+    width: 100%;
+    height: 380px;
+    background: #cbcbcb;
+    margin-top: 23px;
+    margin-bottom: 28px; */
+    /* padding-left: 74px;
+    padding-top: 50px; */
+}
+
+.aboutUsText{
+    font-weight: 400;
+    font-size: 30px;
+    color: #202846;
+}
+
+.aboutUsSpanBox1{
+    width: 1427px;
+/* display: flex;
+margin-top: 20px;
+margin-bottom: 20px; */
+}

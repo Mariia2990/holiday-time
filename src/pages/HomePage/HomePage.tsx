@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
 
   const handleClick = (): void => {
     console.log("Кнопка 'Переглянути' натиснута!");
-    navigate("/reservation/:reservationId/");
+    navigate("/reservation");
   };
 
   const nextSlide = (): void => {

@@ -1,9 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import css from "./ReservationPage.module.css";
 
 const ReservationPage = () => {
+const navigate = useNavigate();
 
-
-
+const handleClick = (id: string): void => {
+  console.log("Перехід на сторінку:", `/reservation/${id}`);
+  navigate(`/reservation/${id}`);
+};
 
 
   return (
@@ -62,7 +66,12 @@ const ReservationPage = () => {
             </svg>
           </div>
           <div className={css.buttonReserveBox}>
-            <button className={css.buttonReserve}>Детальніше</button>
+            <button
+              className={css.buttonReserve}
+              onClick={() => handleClick("1")}
+            >
+              Детальніше
+            </button>
           </div>
         </div>
       </div>
@@ -100,7 +109,12 @@ const ReservationPage = () => {
             </svg>
           </div>
           <div className={css.buttonReserveBox}>
-            <button className={css.buttonReserve}>Детальніше</button>
+            <button
+              className={css.buttonReserve}
+              onClick={() => handleClick("2")}
+            >
+              Детальніше
+            </button>
           </div>
         </div>
       </div>
@@ -138,7 +152,12 @@ const ReservationPage = () => {
             </svg>
           </div>
           <div className={css.buttonReserveBox}>
-            <button className={css.buttonReserve}>Детальніше</button>
+            <button
+              className={css.buttonReserve}
+              onClick={() => handleClick("3")}
+            >
+              Детальніше
+            </button>
           </div>
         </div>
       </div>
@@ -177,7 +196,12 @@ const ReservationPage = () => {
             </svg>
           </div>
           <div className={css.buttonReserveBox}>
-            <button className={css.buttonReserve}>Детальніше</button>
+            <button
+              className={css.buttonReserve}
+              onClick={() => handleClick("4")}
+            >
+              Детальніше
+            </button>
           </div>
         </div>
       </div>

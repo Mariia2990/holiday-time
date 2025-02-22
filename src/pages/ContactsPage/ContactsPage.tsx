@@ -1,23 +1,10 @@
 import css from "./ContactsPage.module.css";
 
 const ContactsPage = () => {
-  //   const [movies, setMovies] = useState<Movie[]>([]);
-  //   const [error, setError] = useState<string | null>(null);
+ 
+  // return (
 
-  //   useEffect(() => {
-  //     const getTrendingMovies = async (): Promise<void> => {
-  //       try {
-  //         const results: Movie[] = await fetchTrendingMovies();
-  //         setMovies(results);
-  //       } catch (error) {
-  //         setError(
-  //           `Failed to fetch trending movies: ${(error as Error).message}`
-  //         );
-  //       }
-  //     };
-  //     getTrendingMovies();
-  //   }, []);
-  return <div>{/* {error && <p style={{ color: "red" }}>{error}</p>} */}</div>;
+  // );
 };
 
 export default ContactsPage;

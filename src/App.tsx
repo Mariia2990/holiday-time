@@ -4,6 +4,7 @@ import Loader from "./components/Loader/Loader";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 const AboutUsPage = lazy(() => import("./pages/AboutUsPage/AboutUsPage"));
@@ -16,23 +17,24 @@ const PersonalOffice = lazy(() => import("./pages/PersonalOffice/PersonalOffice"
 const App = () => {
   return (
     <>
-      <Header/>
+      <Header />
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about-us" element={<AboutUsPage />} />
-          <Route
-            path="/reservation/:reservationId/"
-            element={<ReservationPage />}
-          >
-            <Route path="reservation" element={<HomeReserve />} />
+          <Route path="/reservation" element={<ReservationPage />}>
+            <Route
+              path="/reservation/:reservationId"
+              element={<HomeReserve />}
+            />
           </Route>
           <Route path="/contacts" element={<ContactsPage />} />
           <Route path="/office" element={<PersonalOffice />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Suspense>
-      <Footer/>
+      <Footer />
+      <ScrollToTopButton />
     </>
   );
 };

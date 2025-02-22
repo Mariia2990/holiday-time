@@ -1,11 +1,9 @@
 #root {
-    position: relative;
     max-width: 1920px;
     margin: 0 auto;
     font-family: PT Sans, sans-serif;
     font-weight: 400;
 }
-
 
 .logo {
     height: 6em;
@@ -62,16 +60,6 @@ img {
 
 }
 
-.scroll-top-btn{
-    position: absolute;
-    bottom: 150px;
-    right: 10%;
-    border-radius: 100%;
-    width: 101px;
-    height: 101px;
-color: #fff;
-font-size: 35px;
-}
 
 @keyframes logo-spin {
     from {

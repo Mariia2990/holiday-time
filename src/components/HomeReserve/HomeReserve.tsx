@@ -1,60 +1,10 @@
+import { useParams } from "react-router-dom";
 import css from "./HomeReserve.module.css";
 
 const HomeReserve: React.FC = () => {
-  //   const { movieId } = useParams<{ movieId: string | undefined }>();
-  //   const [cast, setCast] = useState<CastMember[]>([]);
+  const { reservationId } = useParams();
+  console.log("Отримано reservationId:", reservationId);
 
-  //   useEffect(() => {
-  //     const getMovieCast = async () => {
-  //       if (!movieId) {
-  //         console.error("Movie ID is undefined");
-  //         return;
-  //       }
-
-  //       const numericMovieId = Number(movieId);
-  //       if (isNaN(numericMovieId)) {
-  //         console.error("Movie ID is not a valid number");
-  //         return;
-  //       }
-
-  //       try {
-  //         const castData = await fetchMovieCast(numericMovieId);
-  //         setCast(castData);
-  //       } catch (error) {
-  //         console.error("Failed to fetch movie cast:", error);
-  //       }
-  //     };
-
-  //     getMovieCast();
-  //   }, [movieId]);
-
-  //   if (cast.length === 0) {
-  //     return <p>No cast information available for this movie.</p>;
-  //   }
-
-  return (
-//     <ul className={css.castList}>
-//       {cast.map(({ id, name, character, profile_path }) => (
-//         <li key={id} className={css.castItem}>
-//           {profile_path ? (
-//             <img
-//               src={`https://image.tmdb.org/t/p/w200${profile_path}`}
-//               alt={name}
-//               className={css.profileImage}
-//             />
-//           ) : (
-//             <div className={css.placeholder}>
-//               <MdOutlineImageNotSupported className={css.iconNoImage} />
-//             </div>
-//           )}
-//           <p className={css.nameActor}>
-//             <strong>{name}</strong>
-//           </p>
-//           <p className={css.character}>{character}</p>
-//         </li>
-//       ))}
-//     </ul>
-)
+  return <div>Деталі бронювання № {reservationId}</div>;
 };
-
 export default HomeReserve;

@@ -1,3 +1,120 @@
-.contactsBox{
-
+.contactsContainer {
+    /* max-width: 100%; */
+    margin: 0 auto;
+    padding-top: 63px;
+    max-width: 1103px;
 }
+
+.contactsBox{
+display: flex;
+    padding-left: 227px;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    background: #c6c6dc;
+    margin-bottom: 23px;
+}
+
+.contactsTitle{
+        font-style: italic;
+            font-weight: 400;
+            font-size: 48px;
+            color: #202846;
+}
+
+.contactsSpan{
+    border: 3px solid #202846;
+    width: 244px;
+    height: 0px;
+}
+
+.contactsSpan1{
+    border: 3px solid #202846;
+    width: 266px;
+    height: 0px;
+}
+
+.contactsSpan2{
+    border: 3px solid #202846;
+    width: 264px;
+    height: 0px;
+}
+
+.contactsSpan3{
+    border: 3px solid #202846;
+    width: 386px;
+    height: 0px;
+}
+
+.contactsContainer{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-items: center;
+}
+
+.contactsItem {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+
+.contactsLabel {
+font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: #000;
+}
+
+.contactsLabel2{
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: #000;
+    margin-top: 76px;
+}
+.contactsInfo {
+font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+    width: 250px;
+    margin-top: 11px;
+}
+
+.contactsInfo1{
+font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+    width: 266px;
+        margin-top: 11px;
+}
+
+.contactsInfo2{
+font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+    width: 229px;
+    margin-top: 11px;
+}
+
+.contactsInfo3{
+font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+    width: 374px;
+    margin-top: 11px;
+}
+
+.contactsMap {
+    display: flex;
+    border: 3px solid rgba(0, 0, 0, 0.05);
+    border-radius: 40px;
+    width: 577px;
+    height: 335px;
+    margin-top: 52px;
+    margin-left: 236px;
+}
+

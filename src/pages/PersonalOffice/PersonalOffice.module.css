@@ -1,0 +1,110 @@
+.personalOfficeBox {
+    display: flex;
+    padding-left: 227px;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    background: #c6c6dc;
+    margin-bottom: 23px;
+}
+
+.personalOfficeTitle {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    color: #202846;
+}
+
+.personalOfficeContainer{
+    display: flex;
+    flex-direction: column;
+    width: 1318px;
+    margin: 0 auto;
+    height: 498px;
+    padding-left: 140px;
+    padding-top: 45px;
+    margin-top: 23px;
+    /* margin-bottom: 28px; */
+    background: #bdbdc6;
+}
+
+.personalOfficeBox2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personalOfficeImg{
+    border-radius: 208px;
+        width: 196px;
+        height: 184px;
+}
+
+.personalOfficeBtnBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 38px;
+}
+
+.personalOfficeBtn{
+    background-color: #69749B;
+    width: 250px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3sease, transform 0.2sease;
+}
+
+.personalOfficeBtn:hover,
+.personalOfficeBtn:focus{ 
+background-color: #484A54;
+}
+
+.personalOfficeBd{
+    display: flex;
+}
+
+.personalOfficeText{
+    font-style: italic;
+        font-weight: 700;
+        font-size: 36px;
+        color: #353c57;
+}
+
+.personalOfficeSpan{
+    border: 3px solid #fff;
+        width: 712px;
+        height: 0px;
+        margin-bottom: 15px;
+}
+
+.personalOfficeTextSpan{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+        color: #353c57;
+}
+
+.personalOfficeBox3{
+    display: flex;
+    flex-direction: column;
+}
+
+.personalOfficeContainer2{
+    display: flex;
+    flex-direction: row;
+    gap: 141px;
+    align-items: center;
+    justify-content: center;
+}

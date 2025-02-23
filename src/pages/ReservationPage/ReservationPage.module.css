@@ -38,6 +38,12 @@
 display: flex;
 }
 
+.iconRectBtn{
+    display: flex;
+    background-color: transparent;
+    border: none;
+}
+
 .subReserve{
     display: flex;
 }
@@ -96,7 +102,6 @@ display: flex;
 }
 
 .titleBakota{
-    
 font-style: italic;
     font-weight: 700;
     font-size: 36px;
@@ -162,4 +167,10 @@ height: 0px;
 .btnStar:hover svg path,
 .btnStar:focus svg path {
     fill: #F4DC00;
+}
+
+
+.dropdownMenu{
+    display: flex;
+    flex-direction: column;
 }

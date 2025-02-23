@@ -1,10 +1,26 @@
 import { Outlet, useNavigate, useParams } from "react-router-dom";
 import css from "./ReservationPage.module.css";
+import { useState } from "react";
+import LocationDropdown from "../../components/LocationDropdown/LocationDropdown";
+
+const locations = [
+  { id: 1, name: "Незвідана Бакота" },
+  { id: 2, name: "Полонини Карпат" },
+  { id: 3, name: "Автентична Київщина" },
+  { id: 4, name: "Нетипова Одещина" },
+];
 
 const ReservationPage = () => {
   const { reservationId } = useParams();
   const navigate = useNavigate();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selectedLocation, setSelectedLocation] = useState(null);
 
+  const handleLocationSelect = (location) => {
+    setSelectedLocation(location);
+    setIsDropdownOpen(false); // Закриваємо меню після вибору
+    navigate(`/reservation/${location.id}`); // Перехід на сторінку бронювання
+  };
   return (
     <>
       {!reservationId ? (
@@ -18,16 +34,27 @@ const ReservationPage = () => {
               <h3 className={css.reservText}>Оберіть місцерозташування</h3>
             </div>
             <div className={css.iconRect}>
-              <svg
-                width="30"
-                height="25"
-                viewBox="0 0 30 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <button
+                className={css.iconRectBtn}
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               >
-                <path d="M15 25L29.7224 0.25H0.277568L15 25Z" fill="black" />
-              </svg>
+                <svg
+                  width="30"
+                  height="25"
+                  viewBox="0 0 30 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M15 25L29.7224 0.25H0.277568L15 25Z" fill="black" />
+                </svg>
+                {isDropdownOpen && (
+              <LocationDropdown onSelect={handleLocationSelect} />
+            )}
+              </button>
+              
             </div>
+
+            
           </div>
 
           <div className={css.reserveHouse}>

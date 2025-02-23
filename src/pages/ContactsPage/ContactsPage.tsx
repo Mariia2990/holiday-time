@@ -46,7 +46,7 @@ const ContactsPage = () => {
     borderRadius: "40px",
     overflow: "hidden",
   }}
-          allowFullScreen=""
+          // allowFullScreen=""
           loading="lazy"
         ></iframe>
         </div>

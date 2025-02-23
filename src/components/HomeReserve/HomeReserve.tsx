@@ -5,6 +5,11 @@ const HomeReserve: React.FC = () => {
   const { reservationId } = useParams();
   console.log("Отримано reservationId:", reservationId);
 
-  return <div>Деталі бронювання № {reservationId}</div>;
+  return (
+    <>
+    <div>Деталі бронювання № {reservationId}
+      </div>
+    </>
+  );
 };
 export default HomeReserve;

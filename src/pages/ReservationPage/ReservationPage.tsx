@@ -58,12 +58,14 @@ const handleClick = (id: string): void => {
           </div>
 
           <div className={css.star}>
-            <svg id="icon-image" viewBox="0 0 32 32" width="50" height="50">
-              <path
-                fill="#fff"
-                d="M31 12.6h-11.45l-3.55-11.101-3.55 11.1h-11.45l9.25 6.851-3.501 11.050 9.251-6.849 9.25 6.85-3.55-11.1 9.3-6.8z"
-              ></path>
-            </svg>
+            <button className={css.btnStar}>
+              <svg id="icon-image" viewBox="0 0 32 32" width="50" height="50">
+                <path
+                  fill="#fff"
+                  d="M31 12.6h-11.45l-3.55-11.101-3.55 11.1h-11.45l9.25 6.851-3.501 11.050 9.251-6.849 9.25 6.85-3.55-11.1 9.3-6.8z"
+                ></path>
+              </svg>
+            </button>
           </div>
           <div className={css.buttonReserveBox}>
             <button
@@ -101,12 +103,14 @@ const handleClick = (id: string): void => {
           </div>
 
           <div className={css.star}>
-            <svg id="icon-image" viewBox="0 0 32 32" width="50" height="50">
-              <path
-                fill="#fff"
-                d="M31 12.6h-11.45l-3.55-11.101-3.55 11.1h-11.45l9.25 6.851-3.501 11.050 9.251-6.849 9.25 6.85-3.55-11.1 9.3-6.8z"
-              ></path>
-            </svg>
+            <button className={css.btnStar}>
+              <svg id="icon-image" viewBox="0 0 32 32" width="50" height="50">
+                <path
+                  fill="#fff"
+                  d="M31 12.6h-11.45l-3.55-11.101-3.55 11.1h-11.45l9.25 6.851-3.501 11.050 9.251-6.849 9.25 6.85-3.55-11.1 9.3-6.8z"
+                ></path>
+              </svg>
+            </button>
           </div>
           <div className={css.buttonReserveBox}>
             <button
@@ -144,12 +148,14 @@ const handleClick = (id: string): void => {
           </div>
 
           <div className={css.star}>
-            <svg id="icon-image" viewBox="0 0 32 32" width="50" height="50">
-              <path
-                fill="#fff"
-                d="M31 12.6h-11.45l-3.55-11.101-3.55 11.1h-11.45l9.25 6.851-3.501 11.050 9.251-6.849 9.25 6.85-3.55-11.1 9.3-6.8z"
-              ></path>
-            </svg>
+            <button className={css.btnStar}>
+              <svg id="icon-image" viewBox="0 0 32 32" width="50" height="50">
+                <path
+                  fill="#fff"
+                  d="M31 12.6h-11.45l-3.55-11.101-3.55 11.1h-11.45l9.25 6.851-3.501 11.050 9.251-6.849 9.25 6.85-3.55-11.1 9.3-6.8z"
+                ></path>
+              </svg>
+            </button>
           </div>
           <div className={css.buttonReserveBox}>
             <button
@@ -188,12 +194,14 @@ const handleClick = (id: string): void => {
           </div>
 
           <div className={css.star}>
-            <svg id="icon-image" viewBox="0 0 32 32" width="50" height="50">
-              <path
-                fill="#fff"
-                d="M31 12.6h-11.45l-3.55-11.101-3.55 11.1h-11.45l9.25 6.851-3.501 11.050 9.251-6.849 9.25 6.85-3.55-11.1 9.3-6.8z"
-              ></path>
-            </svg>
+            <button className={css.btnStar}>
+              <svg id="icon-image" viewBox="0 0 32 32" width="50" height="50">
+                <path
+                  fill="#fff"
+                  d="M31 12.6h-11.45l-3.55-11.101-3.55 11.1h-11.45l9.25 6.851-3.501 11.050 9.251-6.849 9.25 6.85-3.55-11.1 9.3-6.8z"
+                ></path>
+              </svg>
+            </button>
           </div>
           <div className={css.buttonReserveBox}>
             <button

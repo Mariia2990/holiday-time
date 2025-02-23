@@ -3,9 +3,31 @@ import css from "./HomePage.module.css";
 import SearchForm from "../../components/SearchForm/SearchForm";
 import { useNavigate } from "react-router-dom";
 
+const slides = [
+  {
+    img: "/src/img/Group2x.jpg",
+    text: "Полонини Карпат, у селі Орів посеред гір розташувався затишний куточок для незабутніх вражень. Справжні українські гори, власноручне сироваріння на полонині, водоспади та вікові дерева чекають на Вас.",
+  },
+
+  {
+    img: "/src/img/Bakota-2x.jpg",
+    text: "У Хмельницькій області розташований загублений край -Бакота. Мальовничий каньйон з давньою історією захоплюєсвоїми просторами та незвичною атмосферою. Бджільництво,свіжий мед із польових трав, дотик до природи.",
+  },
+
+  {
+    img: "/src/img/Kyiv-2x.jpg",
+    text: "Неподалік центра Києва розташувалось автентичне українське село на території однойменного села Пирогово. Дерев’яні млини, запашний хліб, приготовлений своїми руками, українські пісні та багато іншого чекає на вас уже зараз.",
+  },
+
+  {
+    img: "/src/img/Odesa-2x.jpg",
+    text: "В Одеській області знаходиться мальовниче містечко Вилкове. Його ще називають «українською Венецією». Вилкове - це містечко на воді, весь в каналах. Розташоване в місці, де зустрічаються річка Дунай і Чорне море. Люди пересуваються переважно човнами. Нетипове українське село не залишить Вас без вражень.",
+  },
+];
+
 const HomePage: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  const totalSlides: number = 7;
+  // const totalSlides: number = 7;
   const navigate = useNavigate(); 
 
   const handleClick = (): void => {
@@ -14,11 +36,13 @@ const HomePage: React.FC = () => {
   };
 
   const nextSlide = (): void => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+    setActiveIndex((prevIndex) => (prevIndex + 1) % slides.length);
   };
 
   const prevSlide = (): void => {
-    setActiveIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
+    setActiveIndex(
+      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
+    );
   };
 
   const handleSearchSubmit = (query: string): void => {
@@ -37,22 +61,22 @@ const HomePage: React.FC = () => {
 
       <div className={css.reserveContainer}>
         <div className={css.boxForText}>
-          <p className={css.textReserve}>
-            Полонини Карпат, у селі Орів посеред гір розташувався затишний
-            куточок для незабутніх вражень. Справжні українські гори,
-            власноручне сироваріння на полонині, водоспади та вікові дерева
-            чекають на Вас.
-          </p>
+          <p className={css.textReserve}>{slides[activeIndex].text}</p>
         </div>
-        <button className={css.arrowLeft} onClick={prevSlide} >
+        <button className={css.arrowLeft} onClick={prevSlide}>
           ❮
         </button>
+        <img
+          src={slides[activeIndex].img}
+          alt="Slide"
+          className={css.slideImage}
+        />
         <button className={css.arrowRight} onClick={nextSlide}>
           ❯
         </button>
 
         <div className={css.circleContainer}>
-          {[...Array(totalSlides)].map((_, index) => (
+          {slides.map((_, index) => (
             <span
               key={index}
               className={`${css.circle} ${

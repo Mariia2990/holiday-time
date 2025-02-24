@@ -1,5 +1,126 @@
 .goBack {
-    font-size: 22px;
+    font-size: 28px;
     display: flex;
-    color: #e9e9e9;
+    color: #fff;
+    font-weight: 700;
+    width: 180px;
+    height: 61px;
+    background-color: #202846;
+        width: 200px;
+        height: 60px;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.reservationDetailBox {
+    display: flex;
+    align-items: center;
+    padding-left: 227px;
+    width: 100%;
+    height: 140px;
+    background: #c6c6dc;
+    margin-bottom: 40px;
+}
+
+.resDetailTitle{
+    font-style: italic;
+        font-weight: 400;
+        font-size: 48px;
+        color: #202846;
+}
+
+.resLinkGoBack{
+    display: flex;
+}
+
+.reservationDetailBox1{
+    display: flex;
+    width: 1490px;
+    height: 665px;
+    /* background: #c6c6dc; */
+    margin: 0 auto;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.reservationDetailBox12{
+    display: flex;
+    flex-direction: column;
+}
+
+.reservDetail1{
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.reservDetailImg{
+    width: 611px;
+    height: 314px;
+}
+
+.reservDetailImg1 {
+width: 611px;
+    height: 343px;
+}
+
+.reservDetail3{
+    display: flex;
+    background: #c7c7c7;
+    width: 871px;
+    height: 378px;
+    align-items: center;
+    padding-left: 92px;
+    padding-right: 92px;
+    justify-content: center;
+}
+
+.reservationDetailBox2{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.reservDetailImg2{
+    width: 441px;
+        height: 279px;
+}
+
+.reservDetailImg3 {
+width: 422px;
+    height: 279px;
+}
+
+.reservationImg{
+    display: flex;
+    gap: 8px;
+}
+
+.reservDetailText{
+    font-weight: 400;
+        font-size: 26px;
+        color: #000;
+}
+
+.reservDetailTitle{
+    font-weight: 700;
+        font-size: 48px;
+        color: #202846;
+        text-align: center;
+}
+
+.seatReservation{
+    width: 1490px;
+        height: 304px;
+        background: #ceced8;
+        margin: 0 auto; 
 }

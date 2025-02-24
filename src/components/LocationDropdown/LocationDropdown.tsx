@@ -13,11 +13,11 @@ const LocationDropdown = ({ onSelect }) => {
 
   const handleSelect = (location) => {
     setSelected(location.name);
-    onSelect(location); // Передаємо об'єкт локації в `ReservationPage`
+    onSelect(location); 
   };
 
   return (
-    <div className={css.dropdown}>
+    <>
       <button className={css.dropdownButton}>{selected}</button>
       <div className={css.dropdownContent}>
         {locations.map((location) => (
@@ -30,7 +30,7 @@ const LocationDropdown = ({ onSelect }) => {
           </button>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

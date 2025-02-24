@@ -96,7 +96,7 @@ width: 611px;
 }
 
 .reservDetailImg3 {
-width: 422px;
+    width: 422px;
     height: 279px;
 }
 
@@ -107,20 +107,94 @@ width: 422px;
 
 .reservDetailText{
     font-weight: 400;
-        font-size: 26px;
-        color: #000;
+    font-size: 26px;
+    color: #000;
 }
 
 .reservDetailTitle{
     font-weight: 700;
-        font-size: 48px;
-        color: #202846;
-        text-align: center;
+    font-size: 48px;
+    color: #202846;
+    text-align: center;
 }
 
 .seatReservation{
+    display: flex;
+    flex-direction: column;
     width: 1490px;
-        height: 304px;
-        background: #ceced8;
-        margin: 0 auto; 
+    height: 304px;
+    background: #ceced8;
+    margin: 0 auto; 
+    padding-left: 45px;
+    padding-top: 15px;
+}
+
+.labelDetail{
+    font-weight: 400;
+    font-size: 29px;
+    color: #000;
+}
+
+.reservDetailForm{
+        display: flex;
+        align-items: center;
+        text-align: left;
+}
+
+.labelDetailWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* gap: 10px; */
+    margin-bottom: 16px;
+}
+
+.textReserv{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+        font-size: 29px;
+        color: #000;
+        margin-bottom: 24px;
+}
+
+.fieldDetail{
+    border: 2px solid #90a4ae;
+        padding: 18px 18px 28px 75px;
+        width: 350px;
+        height: 62px;
+        font-weight: 400;
+        font-size: 29px;
+        color: #000;
+}
+
+.resDetailBox{
+    display: flex;
+    gap: 109px;
+}
+
+.btnDetail{
+    display: flex;
+    width: 351px;
+    height: 112px;
+    font-weight: 400;
+    font-size: 29px;
+    text-align: center;
+    color: #fff;
+    background: #2b365c;
+    margin-left: 148px;
+    padding: 18px 37px;
+}
+
+.detailInput{
+    position: relative;
+}
+
+.iconDetail{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 43px;
+    height: 45px;
 }

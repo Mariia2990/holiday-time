@@ -127,6 +127,7 @@ width: 611px;
     margin: 0 auto; 
     padding-left: 45px;
     padding-top: 15px;
+    margin-bottom: 48px;
 }
 
 .labelDetail{
@@ -137,7 +138,7 @@ width: 611px;
 
 .reservDetailForm{
         display: flex;
-        align-items: center;
+        flex-direction: column;
         text-align: left;
 }
 
@@ -197,4 +198,124 @@ width: 611px;
     transform: translateY(-50%);
     width: 43px;
     height: 45px;
+}
+
+.detailRoom{
+    display: flex;
+    gap: 48px;
+}
+
+.detailRoomText{
+    font-weight: 400;
+    font-size: 29px;
+    color: #000;
+}
+
+.counterBox{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.counterInput{
+    text-align: center;
+    width: 61px;
+    height: 62px;
+    font-weight: 400;
+        font-size: 36px;
+        color: #000;
+}
+
+.detailTable{
+    border-collapse: collapse;
+    width: 1490px;
+    height: 279px;
+    display: flex;
+    flex-direction: column;
+    background: #cfcfd1;
+    margin: 0 auto;
+}
+
+.detailTableTitle{
+    height: 76px;
+    background: #4c536b;
+}
+
+/* .detailTable {
+    margin-top: 20px;
+    border-collapse: collapse;
+} */
+
+.tableGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    color: white;
+}
+
+.tableRow {
+    display: contents;
+    /* Використовуємо для збереження структури Grid */
+}
+
+.headerRow {
+    font-style: italic;
+        font-weight: 400;
+        font-size: 32px;
+        text-align: center;
+        color: #fff;
+}
+
+.tableHeader {
+    padding: 10px;
+    text-align: left;
+    background: #4C536B;
+}
+
+.tableCell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 42px;
+    background-color: #CFCFD1;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: left;
+    color: #000;
+}
+
+.priceButton {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 306px;
+    height: 70px;
+    background: #687bc0;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding-right: 51px;
+}
+
+
+.priceButton:hover {
+    background-color: #6b748b;
+}
+
+.spanLine{
+    border: 3px solid #8f98b9;
+        width: 279px;
+        height: 0px;
+        transform: rotate(-90deg);
+}
+
+.tableCellSpan{
+    text-align: center;
+}
+
+.tableCellSpan2{
+    margin-left: 23px;
+    
 }

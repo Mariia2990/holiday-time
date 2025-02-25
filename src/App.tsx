@@ -32,6 +32,7 @@ const App = () => {
       </Suspense>
       <Footer />
       <ScrollToTopButton />
+
     </>
   );
 };

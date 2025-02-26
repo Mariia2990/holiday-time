@@ -3,7 +3,7 @@ import css from "./AboutUsPage.module.css";
 
 const AboutUsPage = () => {
   return (
-    <>
+    <section className="container">
       <div className={css.aboutUsBox}>
         <h2 className={css.aboutUsTitle}>Про нас</h2>
       </div>
@@ -18,9 +18,9 @@ const AboutUsPage = () => {
       </div>
 
       <div className={css.aboutUsBox2}>
-        <p className={css.aboutUsText}>
+        <h3 className={css.aboutUsText}>
           Наша команда зібрала найколоритніші місця нашої країни саме для тебе.
-          <div className={css.aboutUsSpanBox1}>
+          <p className={css.aboutUsSpanBox1}>
             <br />
             Місія нашої компанії подарувати незабутні враження та показати
             Україну з іншої сторони. Пройти разом з Вами лісовими стежками, щоб
@@ -29,11 +29,11 @@ const AboutUsPage = () => {
             “українській Венеції”.
             <br />
             <br />
-          </div>
+          </p>
           Пізнати Україну разом!
-        </p>
+        </h3>
       </div>
-    </>
+    </section>
   );
 };
 

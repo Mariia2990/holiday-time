@@ -1,9 +1,9 @@
 .aboutUsBox{
     display: flex;
-    padding-left: 227px;
+    padding-left: 80px;
     align-items: center;
     width: 100%;
-    height: 140px;
+    height: 80px;
     background: #c6c6dc;
     margin-bottom: 23px;
 }
@@ -11,7 +11,7 @@
 .aboutUsTitle{
     font-style: italic;
         font-weight: 400;
-        font-size: 48px;
+        font-size: 32px;
         color: #202846;
 }
 
@@ -37,9 +37,9 @@
 .aboutUsSpan{
     font-weight: 700;
     text-align: center;
-        color: #fff;
+    color: #fff;
     font-style: italic;
-        font-size: 36px;
+    font-size: 36px;
 }
 
 .aboutUsSpanBox{
@@ -55,17 +55,7 @@ text-align: center;
     padding-left: 74px;
     padding-top: 30px;
     margin-top: 23px;
-    /* margin-bottom: 28px; */
     background: #cbcbcb;
-    /* display: flex;
-    align-items: center;
-    width: 100%;
-    height: 380px;
-    background: #cbcbcb;
-    margin-top: 23px;
-    margin-bottom: 28px; */
-    /* padding-left: 74px;
-    padding-top: 50px; */
 }
 
 .aboutUsText{
@@ -76,7 +66,25 @@ text-align: center;
 
 .aboutUsSpanBox1{
     width: 1427px;
-/* display: flex;
-margin-top: 20px;
-margin-bottom: 20px; */
+}
+
+@media only screen and (min-width: 768px) {
+.aboutUsBox {
+        padding-left: 100px;
+        height: 90px;
+        background: #c6c6dc;
+    }
+        .aboutUsTitle {
+        font-size: 36px;
+        }
+}
+
+@media only screen and (min-width: 1920px) {
+    .aboutUsBox {
+        padding-left: 227px;
+        height: 140px;
+        }
+    .aboutUsTitle {
+        font-size: 48px;
+                }
 }

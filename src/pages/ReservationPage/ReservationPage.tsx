@@ -18,8 +18,8 @@ const ReservationPage = () => {
 
   const handleLocationSelect = (location) => {
     setSelectedLocation(location);
-    setIsDropdownOpen(false); // Закриваємо меню після вибору
-    navigate(`/reservation/${location.id}`); // Перехід на сторінку бронювання
+    setIsDropdownOpen(false); 
+    navigate(`/reservation/${location.id}`); 
   };
   return (
     <>
@@ -81,7 +81,7 @@ const ReservationPage = () => {
                 </div>
               </div>
 
-              <div className={css.star}>
+              <div className={css.starIcon}>
                 <button className={css.btnStar}>
                   <svg
                     id="icon-image"

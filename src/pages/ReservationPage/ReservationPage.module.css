@@ -123,36 +123,33 @@ width: 712px;
 height: 0px;
 }
 
-.star{
+.starIcon{
     display: flex;
     flex-direction: column;
 }
 
 .buttonReserve{
-        position: absolute;
-            top: 82%;
-            left: 90%;
-            background-color: #202846;
-            width: 200px;
-            height: 60px;
-            font-weight: 400;
-            font-size: 24px;
-            text-align: center;
-            color: #fff;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+    position: absolute;
+    top: 82%;
+    left: 90%;
+    background-color: #202846;
+    width: 200px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.buttonReserveBox{
-
-}
 
 .btnStar{
     display: flex;

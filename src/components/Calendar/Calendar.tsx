@@ -11,11 +11,11 @@ interface CalendarProps {
 const Calendar: React.FC<CalendarProps> = ({ selectedDate, onChange }) => {
   return (
     <DatePicker
-      selected={selectedDate}
-      onChange={onChange}
-      dateFormat="dd/MM/yyyy"
-      minDate={new Date()}
-      placeholderText="Оберіть дату"
+  selected={selectedDate}
+  onChange={onChange}
+  dateFormat="dd/MM/yyyy"
+  minDate={new Date()}
+  placeholderText="Оберіть дату"
       customInput={
         <input
           style={{

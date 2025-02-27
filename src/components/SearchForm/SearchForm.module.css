@@ -14,14 +14,14 @@
 
 .field {
     border: 1px solid #90a4ae;
-    padding: 12px 22px;
-    width: 150px;
-    height: 22px;
+    padding: 6px;
+    width: 100px;
+    height: 20px;
     transition: border-color .25s cubic-bezier(.4, 0, .2, 1);
     margin-bottom: auto;
     background-color: #fff;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 8px;
     color: #90a4ae;
 }
 
@@ -80,6 +80,7 @@ color: #90a4ae;
     /* gap: 16px; */
     align-items: center; 
     text-align: left;
+    margin-top: 8px;
 }
 
 .label{

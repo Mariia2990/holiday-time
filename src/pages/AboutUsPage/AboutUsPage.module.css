@@ -39,12 +39,12 @@
     text-align: center;
     color: #fff;
     font-style: italic;
-    font-size: 36px;
+    font-size: 16px;
 }
 
 .aboutUsSpanBox{
 display: flex;
-width: 1099px;
+width: 350px;
 text-align: center;
 }
 
@@ -52,7 +52,7 @@ text-align: center;
     max-width: 100%;
     margin: 0 auto;
     height: 380px;
-    padding-left: 74px;
+    padding-left: 34px;
     padding-top: 30px;
     margin-top: 23px;
     background: #cbcbcb;
@@ -60,12 +60,12 @@ text-align: center;
 
 .aboutUsText{
     font-weight: 400;
-    font-size: 30px;
+    font-size: 16px;
     color: #202846;
 }
 
 .aboutUsSpanBox1{
-    width: 1427px;
+    width: 310px;
 }
 
 @media only screen and (min-width: 768px) {

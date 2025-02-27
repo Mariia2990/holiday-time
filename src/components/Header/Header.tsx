@@ -1,10 +1,14 @@
 import Navigation from "../Navigation/Navigation";
 import css from "./Header.module.css";
 
-const Header = () => {
+interface HeaderProps {
+  openMenu: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ openMenu }) => {
   return (
     <header className={css.header}>
-      <Navigation />
+      <Navigation openMenu={openMenu} />
     </header>
   );
 };

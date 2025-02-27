@@ -67,11 +67,18 @@ const HomePage: React.FC = () => {
           <button className={css.arrowLeft} onClick={prevSlide}>
             ❮
           </button>
-          <img
-            src={slides[activeIndex].img}
-            alt="Slide"
-            className={css.slideImage}
-          />
+          <div className={css.sliderWrapper}>
+            {slides.map((slide, index) => (
+              <img
+                key={index}
+                src={slide.img}
+                alt="Slide"
+                className={`${css.slideImage} ${
+                  activeIndex === index ? css.activeSlide : css.hiddenSlide
+                }`}
+              />
+            ))}
+          </div>
           <button className={css.arrowRight} onClick={nextSlide}>
             ❯
           </button>

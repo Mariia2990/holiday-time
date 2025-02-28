@@ -4,10 +4,12 @@ const PersonalOffice = () => {
  
   return (
     <>
+      <div className={css.container1}>
       <div className={css.personalOfficeBox}>
         <h2 className={css.personalOfficeTitle}>Особистий кабінет</h2>
+        </div>
       </div>
-
+<div className={css.container}>
       <div className={css.personalOfficeContainer}>
         <div className={css.personalOfficeContainer2}>
           <div className={css.personalOfficeBox2}>
@@ -61,6 +63,7 @@ const PersonalOffice = () => {
               </p>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </>

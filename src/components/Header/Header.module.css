@@ -4,22 +4,45 @@
     z-index: 999;
     /* display: flex;
     align-items: center; */
-    max-width: 360px;
+    width: 100%;
     padding: 10px;
     background-color: #202846;
 }
 
 @media only screen and (min-width: 768px) {
     .header {
-        max-width: 768px;
+        /* max-width: 768px; */
         padding: 15px;
     }
 }
 
 @media only screen and (min-width: 1920px) {
     .header {
-        max-width: 1920px;
+        /* max-width: 1920px; */
         padding: 15px;
         padding-right: 63px;
         }
+}
+
+.container {
+    max-width: 360px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+    .container {
+        max-width: 1920px;
+        padding-left: 218px;
+        padding-right: 218px;
+    }
+
 }

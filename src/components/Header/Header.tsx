@@ -8,7 +8,9 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ openMenu }) => {
   return (
     <header className={css.header}>
-      <Navigation openMenu={openMenu} />
+      <div className={css.container}>
+        <Navigation openMenu={openMenu} />
+      </div>
     </header>
   );
 };

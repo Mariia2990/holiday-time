@@ -564,6 +564,10 @@ width: 12px;
             /* object-fit: cover; */
             transition: opacity 0.5s ease-in-out;
         }
+
+        .sliderWrapper {
+            height: 604px;
+        }
 }
 .container {
     max-width: 360px;

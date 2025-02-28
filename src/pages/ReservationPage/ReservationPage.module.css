@@ -11,20 +11,25 @@
 .resTitle{
     font-style: italic;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 22px;
     color: #202846;
+}
+
+.iconRectBtn1{
+    width: 15px;
+    height: 20px;
 }
 
 .reservationBox2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1489px;
+    width: 289px;
     height: 73px;
     background: #e8e8e8;
     margin: 0 auto;
-    padding: 18px 22px 18px 574px;
-    margin-bottom: 56px;
+    margin-bottom: 26px;
+    padding: 10px;
 }
 
 .reservText{
@@ -49,27 +54,32 @@ display: flex;
 }
 
 .reserveHouse{
+    content: "";
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 1489px;
-    height: 300px;
+    width: 289px;
+    height: 200px;
     background: #bdbdc6;
     margin: 0 auto;
-    padding: 28px 0 28px 103px;
-    margin-bottom: 36px;
+    /* padding: 8px 0 8px; */
+    margin-bottom: 16px;
 }
 
 .reserveHouseContainer{
-    content: "";
-    position: relative;
+    /* content: "";
+    position: relative; */
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .reserveHouseBakotaBox{
-    margin-right: 102px;
+    display: flex;
+    padding-top: 30px;
+    margin-right: 25px;
 }
 
 .reserveHouseBakotaBox1{
@@ -84,16 +94,16 @@ display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 10px;
-    width: 712px;
-    height: 184px;
+    margin-top: 5px;
+    width: 122px;
+    height: 114px;
     background: #d7d7dd;
-    margin-right: 20px;
+    padding: 5px;
 }
 
 .bakotaImg{
-    max-width: 100%;
-    height: 244px;
+    width: 122px;
+    height: 114px;
 }
 
 .titleBakotaBox{
@@ -104,7 +114,7 @@ display: flex;
 .titleBakota{
 font-style: italic;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 14px;
     text-align: center;
     color: #353c57
 }
@@ -112,14 +122,14 @@ font-style: italic;
 
 .textBakota{
 font-weight: 400;
-    font-size: 22px;
+    font-size: 7px;
     text-align: center;
     color: #202846;
 }
 
 .lineBakota{
-border: 3px solid #fff;
-width: 712px;
+border: 1px solid #fff;
+width: 122px;
 height: 0px;
 }
 
@@ -128,18 +138,23 @@ height: 0px;
     flex-direction: column;
 }
 
+.iconStar{
+    width: 20px;
+    height: 20px;
+}
+
 .buttonReserve{
     position: absolute;
     top: 82%;
-    left: 90%;
+    left: 89%;
     background-color: #202846;
-    width: 200px;
-    height: 60px;
+    width: 60px;
+    height: 20px;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 10px;
     text-align: center;
     color: #fff;
-    padding: 12px 24px;
+    /* padding: 12px 24px; */
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -152,6 +167,9 @@ height: 0px;
 
 
 .btnStar{
+    position: absolute;
+    top: 5px;
+    right: 5px;
     display: flex;
     border: none;
     background-color: transparent;
@@ -174,7 +192,159 @@ height: 0px;
 
 @media only screen and (min-width: 768px) {
  
-
+    .reservationBox2 {
+            width: 389px;
+            padding: 18px;
+        }
+                .reservationBox {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 27px;
+                    width: 100%;
+                    height: 70px;
+                    background: #c6c6dc;
+                    margin-bottom: 26px;
+                }
+        
+                .resTitle {
+                    font-size: 28px;
+                }
+        
+                .iconRectBtn1 {
+                    width: 15px;
+                    height: 20px;
+                }
+        
+       
+                .reservText {
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+        
+       
+        
+                .reserveHouse {
+                    width: 389px;
+                }
+        
+                .reserveHouseContainer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+        
+                .reserveHouseBakotaBox {
+                    display: flex;
+                    padding-top: 30px;
+                    margin-right: 25px;
+                }
+        
+                .reserveHouseBakotaBox1 {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+        
+                .reserveHouseBakotaBox2 {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    margin-top: 5px;
+                    width: 152px;
+                    height: 114px;
+                    background: #d7d7dd;
+                }
+        
+                .bakotaImg {
+                    width: 152px;
+                    height: 114px;
+                }
+        
+                .titleBakotaBox {
+                    display: block;
+                    align-self: start;
+                }
+        
+                .titleBakota {
+                    font-style: italic;
+                    font-weight: 700;
+                    font-size: 16px;
+                    text-align: center;
+                    color: #353c57
+                }
+        
+        
+                .textBakota {
+                    font-weight: 400;
+                    font-size: 8px;
+                    text-align: center;
+                    color: #202846;
+                }
+        
+                .lineBakota {
+                    border: 1px solid #fff;
+                    width: 152px;
+                    height: 0px;
+                }
+        
+                .starIcon {
+                    display: flex;
+                    flex-direction: column;
+                }
+        
+                .iconStar {
+                    width: 20px;
+                    height: 20px;
+                }
+        
+                .buttonReserve {
+                    position: absolute;
+                    top: 82%;
+                    left: 89%;
+                    background-color: #202846;
+                    width: 60px;
+                    height: 20px;
+                    font-weight: 400;
+                    font-size: 10px;
+                    text-align: center;
+                    color: #fff;
+                    /* padding: 12px 24px; */
+                    border: none;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    transition: background-color 0.3s ease, transform 0.2s ease;
+                }
+        
+        
+                .btnStar {
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    display: flex;
+                    border: none;
+                    background-color: transparent;
+                }
+        
+                .btnStar svg path {
+                    transition: fill 0.3s ease;
+                }
+        
+                .btnStar:hover svg path,
+                .btnStar:focus svg path {
+                    fill: #F4DC00;
+                }
+        
+        
+                .dropdownMenu {
+                    display: flex;
+                    flex-direction: column;
+                }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -358,6 +528,10 @@ height: 0px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.container1{
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {

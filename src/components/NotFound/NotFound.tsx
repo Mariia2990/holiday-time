@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import css from "./NotFound.module.css";
 
-const NotFound = () => {
+const NotFound: React.FC = () => {
   return (
     <div className={css.notFoundContainer}>
       <h1 className={css.title}>404</h1>

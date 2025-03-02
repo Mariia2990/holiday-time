@@ -21,6 +21,8 @@
 }
 
 .reservationBox2{
+    position: relative;
+        content: "";
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,6 +43,7 @@
 
 .iconRect{
 display: flex;
+
 }
 
 .iconRectBtn{

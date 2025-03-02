@@ -1,15 +1,11 @@
 import { useEffect, useState } from "react";
 import "./ScrollTopButton.css";
 
-const ScrollToTopButton = () => {
-  const [isVisible, setIsVisible] = useState(false);
+const ScrollToTopButton: React.FC = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(false); 
 
   const handleScroll = () => {
-    if (window.scrollY > 300) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
+    setIsVisible(window.scrollY > 300);
   };
 
   useEffect(() => {
@@ -19,16 +15,17 @@ const ScrollToTopButton = () => {
     };
   }, []);
 
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-    return (
-    <button className={`scrollTopButton ${isVisible ? "visible" : ""}`}
-      onClick={scrollToTop}>
+  return (
+    <button
+      className={`scrollTopButton ${isVisible ? "visible" : ""}`}
+      onClick={scrollToTop}
+    >
       ↑
-            </button>
+    </button>
   );
 };
 

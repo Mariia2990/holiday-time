@@ -1,9 +1,22 @@
-import Modal from "react-modal";
+import * as Modal from "react-modal";
 import css from "./ImageModal.module.css";
+import React from "react";
 
 Modal.setAppElement("#root");
 
-function ImageModal({ isOpen, onRequestClose, largeImageURL, alt }) {
+interface ImageModalProps {
+  isOpen: boolean;
+  onRequestClose: () => void;
+  largeImageURL: string;
+  alt: string;
+}
+
+const ImageModal: React.FC<ImageModalProps> = ({
+  isOpen,
+  onRequestClose,
+  largeImageURL,
+  alt,
+}) => {
   return (
     <Modal
       isOpen={isOpen}
@@ -14,6 +27,6 @@ function ImageModal({ isOpen, onRequestClose, largeImageURL, alt }) {
       <img src={largeImageURL} alt={alt} className={css.largeImage} />
     </Modal>
   );
-}
+};
 
 export default ImageModal;

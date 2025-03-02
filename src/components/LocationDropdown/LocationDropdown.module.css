@@ -28,8 +28,8 @@
     /* margin-top: 5px; */
     border-radius: 5px;
     overflow: hidden;
-    right: 35px;
-    top:230px;
+    right: 0px;
+    top:60px;
 }
 
 .dropdownContent button {
@@ -61,8 +61,7 @@
     .dropdownContent {
             width: 389px;
             border-radius: 5px;
-            right: 188px;
-            top: 250px;
+
         }
 }
 
@@ -93,8 +92,8 @@
     /* margin-top: 5px; */
     border-radius: 5px;
     overflow: hidden;
-    right: 303px;
-    top: 370px;
+    right: 0px;
+    top: 70px;
 }
 
 .dropdownContent button {

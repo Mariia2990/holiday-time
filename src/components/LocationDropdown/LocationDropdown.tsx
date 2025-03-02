@@ -1,24 +1,35 @@
 import css from "./LocationDropdown.module.css";
 import { useState } from "react";
 
-const locations = [
+interface Location {
+  id: number;
+  name: string;
+}
+
+interface LocationDropdownProps {
+  onSelect: (location: Location) => void;
+}
+
+const locations: Location[] = [
   { id: 1, name: "Бакота" },
   { id: 2, name: "Карпати" },
   { id: 3, name: "Київ" },
   { id: 4, name: "Одеська область" },
 ];
 
-const LocationDropdown = ({ onSelect }) => {
-  const [selected, setSelected] = useState("");
+const LocationDropdown: React.FC<LocationDropdownProps> = ({ onSelect }) => {
+  const [selected, setSelected] = useState<string>(""); 
 
-  const handleSelect = (location) => {
+  const handleSelect = (location: Location) => {
     setSelected(location.name);
-    onSelect(location); 
+    onSelect(location);
   };
 
   return (
     <>
-      <button className={css.dropdownButton}>{selected}</button>
+      <button className={css.dropdownButton}>
+        {selected || ""}
+      </button>
       <div className={css.dropdownContent}>
         {locations.map((location) => (
           <button

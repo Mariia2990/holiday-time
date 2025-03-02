@@ -3,10 +3,10 @@ import css from "./ReservationDetailPage.module.css";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import Calendar from "../../components/Calendar/Calendar";
-import kapratyImage from "../../img/Karpaty1-2x.jpg";
-import kapratyImage2 from "../../img/Group2x.jpg";
-import kapratyImage3 from "../../img/Karpaty2-2x.jpg";
-import kapratyImage4 from "../../img/Karpaty3-2x.jpg";
+// import kapratyImage from "../../img/Karpaty1-2x.jpg";
+// import kapratyImage2 from "../../img/Group2x.jpg";
+// import kapratyImage3 from "../../img/Karpaty2-2x.jpg";
+// import kapratyImage4 from "../../img/Karpaty3-2x.jpg";
 
 interface ReservationFormValues {
   arrivalDate: string;
@@ -79,14 +79,20 @@ const ReservationDetailPage: React.FC = () => {
                 <div className={css.labelDetailWrapper}>
                   <label className={css.labelDetail}>Дата заїзду</label>
                   <Calendar
-                    selectedDate={values.arrivalDate}
+                    selectedDate={
+                      values.arrivalDate ? new Date(values.arrivalDate) : null
+                    }
                     onChange={(date) => setFieldValue("arrivalDate", date)}
                   />
                 </div>
                 <div className={css.labelDetailWrapper}>
                   <label className={css.labelDetail}>Дата виїзду</label>
                   <Calendar
-                    selectedDate={values.departureDate}
+                    selectedDate={
+                      values.departureDate
+                        ? new Date(values.departureDate)
+                        : null
+                    }
                     onChange={(date) => setFieldValue("departureDate", date)}
                   />
                 </div>
@@ -108,7 +114,7 @@ const ReservationDetailPage: React.FC = () => {
                       const value = Math.max(1, Number(e.target.value));
                       setFieldValue("rooms", value);
                     }}
-                    onBlur={(e) => {
+                    onBlur={(e: React.FocusEvent<HTMLInputElement>) => {
                       if (e.target.value === "") setFieldValue("rooms", 1);
                     }}
                   />
@@ -126,7 +132,7 @@ const ReservationDetailPage: React.FC = () => {
                       const value = Math.max(1, Number(e.target.value));
                       setFieldValue("adults", value);
                     }}
-                    onBlur={(e) => {
+                    onBlur={(e: React.FocusEvent<HTMLInputElement>) => {
                       if (e.target.value === "") setFieldValue("adults", 1);
                     }}
                   />
@@ -144,7 +150,7 @@ const ReservationDetailPage: React.FC = () => {
                       const value = Math.max(0, Number(e.target.value));
                       setFieldValue("children", value);
                     }}
-                    onBlur={(e) => {
+                    onBlur={(e: React.FocusEvent<HTMLInputElement>) => {
                       if (e.target.value === "") setFieldValue("children", 0);
                     }}
                   />

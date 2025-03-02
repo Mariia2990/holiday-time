@@ -1,6 +1,7 @@
+import React from "react";
 import css from "./ContactsPage.module.css";
 
-const ContactsPage = () => {
+const ContactsPage: React.FC = () => {
 
   return (
     <>

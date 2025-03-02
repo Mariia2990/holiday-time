@@ -1,6 +1,7 @@
+import React from "react";
 import css from "./PersonalOffice.module.css";
 
-const PersonalOffice = () => {
+const PersonalOffice: React.FC = () => {
  
   return (
     <>

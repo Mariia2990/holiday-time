@@ -404,10 +404,10 @@ height: 0px;
         flex-direction: column;
         justify-content: center;
         width: 1489px;
-        height: 300px;
+        height: auto;
         background: #bdbdc6;
         margin: 0 auto;
-        padding: 28px 0 28px 103px;
+        padding: 30px 0 30px;
         margin-bottom: 36px;
     }
 
@@ -442,7 +442,7 @@ height: 0px;
     }
 
     .bakotaImg {
-        max-width: 100%;
+        width: 485px;
         height: 244px;
     }
 

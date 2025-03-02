@@ -1,7 +1,8 @@
+import React from "react";
 import css from "./AboutUsPage.module.css";
 
 
-const AboutUsPage = () => {
+const AboutUsPage: React.FC = () => {
   return (
     <section className="container">
       <div className={css.aboutUsBox}>

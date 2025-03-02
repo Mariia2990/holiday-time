@@ -27,7 +27,6 @@ const slides = [
 
 const HomePage: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  // const totalSlides: number = 7;
   const navigate = useNavigate(); 
 
   const handleClick = (): void => {

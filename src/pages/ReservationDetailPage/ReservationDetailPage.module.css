@@ -1,17 +1,13 @@
 .goBack {
-    font-size: 28px;
+    font-size: 14px;
     display: flex;
     color: #fff;
     font-weight: 700;
-    width: 180px;
-    height: 61px;
+    width: 100px;
+    height: 41px;
     background-color: #202846;
-    width: 200px;
-    height: 60px;
-    font-weight: 400;
-    font-size: 24px;
     text-align: center;
-    padding: 12px 24px;
+    /* padding: 12px 24px; */
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -22,12 +18,17 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.goBackIcon{
+width: 14px;
+height: 14px;
+}
+
 .reservationDetailBox {
     display: flex;
     align-items: center;
-    padding-left: 227px;
+    padding-left: 10px;
     width: 100%;
-    height: 140px;
+    height: 70px;
     background: #c6c6dc;
     margin-bottom: 40px;
 }
@@ -35,14 +36,14 @@
 .resDetailTitle{
     font-style: italic;
         font-weight: 400;
-        font-size: 22px;
+        font-size: 18px;
         color: #202846;
 }
 
 .resLinkGoBack{
     display: flex;
 }
-
+/* 
 .reservationDetailBox1{
     display: flex;
     width: 1490px;
@@ -50,7 +51,7 @@
     margin: 0 auto;
     gap: 8px;
     margin-bottom: 32px;
-}
+} */
 
 .reservationDetailBox12{
     display: flex;
@@ -112,7 +113,7 @@ width: 611px;
 
 .reservDetailTitle{
     font-weight: 700;
-    font-size: 48px;
+    font-size: 28px;
     color: #202846;
     text-align: center;
 }
@@ -120,18 +121,19 @@ width: 611px;
 .seatReservation{
     display: flex;
     flex-direction: column;
-    width: 1490px;
-    height: 304px;
+    justify-content: center;
+    width: 200px;
+    height: 250px;
     background: #ceced8;
     margin: 0 auto; 
-    padding-left: 45px;
+    padding-left: 15px;
     padding-top: 15px;
-    margin-bottom: 48px;
+    margin-bottom: 28px;
 }
 
 .labelDetail{
     font-weight: 400;
-    font-size: 29px;
+    font-size: 18px;
     color: #000;
 }
 
@@ -146,7 +148,7 @@ width: 611px;
     flex-direction: column;
     text-align: left;
     /* gap: 10px; */
-    margin-bottom: 16px;
+    margin-bottom: 6px;
 }
 
 .textReserv{
@@ -171,19 +173,20 @@ width: 611px;
 .resDetailBox{
     display: flex;
     align-items: center;
-    gap: 109px;
+    flex-direction: column;
+    /* gap: 109px; */
 }
 
 .btnDetail{
     display: flex;
-    width: 351px;
-    height: 112px;
+    align-items: center;
+    width: 100px;
+    height: 32px;
     font-weight: 400;
-    font-size: 29px;
+    font-size: 10px;
     text-align: center;
     color: #fff;
     background: #2b365c;
-    padding: 18px 37px;
 }
 
 .detailInput{
@@ -200,13 +203,15 @@ width: 611px;
 }
 
 .detailRoom{
-    display: flex;
-    gap: 48px;
+    display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10px;
 }
 
 .detailRoomText{
     font-weight: 400;
-    font-size: 29px;
+    font-size: 14px;
     color: #000;
 }
 
@@ -218,10 +223,10 @@ width: 611px;
 
 .counterInput{
     text-align: center;
-    width: 61px;
-    height: 62px;
+    width: 20px;
+    height: 20px;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 14px;
     color: #000;
 }
 
@@ -322,3 +327,355 @@ padding-left: 0;
     
 }
 
+@media only screen and (min-width: 768px) {
+.goBack {
+        font-size: 16px;
+    }
+
+        .goBackIcon {
+            width: 18px;
+            height: 18px;
+        }
+
+        .seatReservation {
+            width: 300px;
+            height: 350px;
+            padding-left: 15px;
+            padding-top: 15px;
+            margin-bottom: 28px;
+        }
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .goBackIcon {
+            width: 28px;
+            height: 28px;
+        }
+
+.goBack {
+        font-size: 28px;
+        display: flex;
+        color: #fff;
+        font-weight: 700;
+        width: 180px;
+        height: 61px;
+        background-color: #202846;
+        width: 200px;
+        height: 60px;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .reservationDetailBox {
+        display: flex;
+        align-items: center;
+        padding-left: 227px;
+        width: 100%;
+        height: 140px;
+        background: #c6c6dc;
+        margin-bottom: 40px;
+    }
+
+    .resDetailTitle {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 48px;
+        color: #202846;
+    }
+
+    .resLinkGoBack {
+        display: flex;
+    }
+
+    .reservationDetailBox1 {
+        display: flex;
+        width: 1490px;
+        height: 665px;
+        margin: 0 auto;
+        gap: 8px;
+        margin-bottom: 32px;
+    }
+
+    .reservationDetailBox12 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reservDetail1 {
+        display: flex;
+        margin-bottom: 8px;
+    }
+
+    .reservDetailImg {
+        width: 611px;
+        height: 314px;
+    }
+
+    .reservDetailImg1 {
+        width: 611px;
+        height: 343px;
+    }
+
+    .reservDetail3 {
+        display: flex;
+        background: #c7c7c7;
+        width: 871px;
+        height: 378px;
+        align-items: center;
+        padding-left: 92px;
+        padding-right: 92px;
+        justify-content: center;
+    }
+
+    .reservationDetailBox2 {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .reservDetailImg2 {
+        width: 441px;
+        height: 279px;
+    }
+
+    .reservDetailImg3 {
+        width: 422px;
+        height: 279px;
+    }
+
+    .reservationImg {
+        display: flex;
+        gap: 8px;
+    }
+
+    .reservDetailText {
+        font-weight: 400;
+        font-size: 26px;
+        color: #000;
+    }
+
+    .reservDetailTitle {
+        font-weight: 700;
+        font-size: 48px;
+        color: #202846;
+        text-align: center;
+    }
+
+    .seatReservation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 1490px;
+        height: 304px;
+        background: #ceced8;
+        margin: 0 auto;
+        padding-left: 45px;
+        padding-top: 15px;
+        margin-bottom: 48px;
+    }
+
+    .labelDetail {
+        font-weight: 400;
+        font-size: 29px;
+        color: #000;
+    }
+
+    .reservDetailForm {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .labelDetailWrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        /* gap: 10px; */
+        margin-bottom: 16px;
+    }
+
+    .textReserv {
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        font-size: 29px;
+        color: #000;
+        margin-bottom: 24px;
+    }
+
+    .fieldDetail {
+        border: 2px solid #90a4ae;
+        padding: 18px 18px 28px 75px;
+        width: 350px;
+        height: 62px;
+        font-weight: 400;
+        font-size: 29px;
+        color: #000;
+    }
+
+    .resDetailBox {
+        display: flex;
+        align-items: center;
+        gap: 109px;
+    }
+
+    .btnDetail {
+        display: flex;
+        width: 351px;
+        height: 112px;
+        font-weight: 400;
+        font-size: 29px;
+        text-align: center;
+        color: #fff;
+        background: #2b365c;
+        padding: 18px 37px;
+    }
+
+    .detailInput {
+        position: relative;
+    }
+
+    .iconDetail {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        width: 43px;
+        height: 45px;
+    }
+
+    .detailRoom {
+        display: flex;
+        gap: 48px;
+    }
+
+    .detailRoomText {
+        font-weight: 400;
+        font-size: 29px;
+        color: #000;
+    }
+
+    .counterBox {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .counterInput {
+        text-align: center;
+        width: 61px;
+        height: 62px;
+        font-weight: 400;
+        font-size: 36px;
+        color: #000;
+    }
+
+    .detailTable {
+        border-collapse: collapse;
+        width: 1490px;
+        height: 279px;
+        display: flex;
+        flex-direction: column;
+        background: #cfcfd1;
+        margin: 0 auto;
+    }
+
+    .detailTableTitle {
+        height: 76px;
+        background: #4c536b;
+    }
+
+    .tableGrid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        color: white;
+        height: 279px;
+    }
+
+    .tableRow {
+        display: contents;
+    }
+
+    .headerRow {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 32px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .tableHeader {
+        padding: 10px;
+        text-align: left;
+        background: #4C536B;
+    }
+
+    .tableCell {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* padding-top: 42px; */
+        background-color: #CFCFD1;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 32px;
+        text-align: left;
+        color: #000;
+        border-left: 3px solid #8f98b9;
+        /* align-items: center; */
+        padding-left: 38px;
+    }
+
+    .tableCell:first-child {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .priceButton {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 306px;
+        height: 70px;
+        background: #687bc0;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 5px;
+        padding-right: 51px;
+    }
+
+
+    .priceButton:hover {
+        background-color: #6b748b;
+    }
+
+    .spanLine {
+        border: 3px solid #8f98b9;
+        width: 279px;
+        height: 0px;
+        transform: rotate(-90deg);
+    }
+
+    .tableCellSpan {
+        text-align: center;
+    }
+
+    .tableCellSpan2 {
+        margin-left: 23px;
+
+    }
+}

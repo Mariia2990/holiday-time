@@ -3,24 +3,30 @@ import css from "./ReservationPage.module.css";
 import { useState } from "react";
 import LocationDropdown from "../../components/LocationDropdown/LocationDropdown";
 
-const locations = [
+interface Location {
+  id: number;
+  name: string;
+}
+
+const locations: Location[] = [
   { id: 1, name: "Незвідана Бакота" },
   { id: 2, name: "Полонини Карпат" },
   { id: 3, name: "Автентична Київщина" },
   { id: 4, name: "Нетипова Одещина" },
 ];
 
-const ReservationPage = () => {
-  const { reservationId } = useParams();
-  const navigate = useNavigate();
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedLocation, setSelectedLocation] = useState(null);
+const ReservationPage: React.FC = () => {
+const { reservationId } = useParams<{ reservationId?: string }>();
+const navigate = useNavigate();
+const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
+const [selectedLocation, setSelectedLocation] = useState<Location | null>(null);
 
-  const handleLocationSelect = (location) => {
-    setSelectedLocation(location);
-    setIsDropdownOpen(false); 
-    navigate(`/reservation/${location.id}`); 
+const handleLocationSelect = (location: Location) => {
+  setSelectedLocation(location);
+  setIsDropdownOpen(false);
+  navigate(`/reservation/${location.id}`);
   };
+  
   return (
     <>
       {!reservationId ? (

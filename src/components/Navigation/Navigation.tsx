@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { NavLink, Link } from "react-router-dom";
 import css from "./Navigation.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
+import logo from "../../img/photo_2021-09-21_13-25-38-2x.jpg";
 
 interface NavigationProps {
   openMenu: () => void;
@@ -42,7 +43,7 @@ const Navigation: React.FC<NavigationProps> = ({ openMenu }) => {
       <Link to="/" className={css.logoLink}>
         <img
           className={css.logoIcon}
-          src="/src/img/photo_2021-09-21_13-25-38-1x.jpg"
+          src={logo}
           alt="Logo"
         />
       </Link>

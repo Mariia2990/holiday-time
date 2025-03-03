@@ -2,6 +2,7 @@ import { useState } from "react";
 import css from "./HomePage.module.css";
 import SearchForm from "../../components/SearchForm/SearchForm";
 import { useNavigate } from "react-router-dom";
+import ActiveVacation from "../../img/image2x.jpg"
 
 const slides = [
   {
@@ -134,7 +135,7 @@ const HomePage: React.FC = () => {
             <div className={css.activeVacationImg}>
               <img
                 className={css.activeVacationImg1}
-                src="/src/img/image2x.jpg"
+                src={ActiveVacation}
                 alt="Active Vacation"
               />
             </div>

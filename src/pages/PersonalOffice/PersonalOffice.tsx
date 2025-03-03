@@ -1,5 +1,6 @@
 import React from "react";
 import css from "./PersonalOffice.module.css";
+import person from "../../img/people-2x.jpg";
 
 const PersonalOffice: React.FC = () => {
  
@@ -17,7 +18,7 @@ const PersonalOffice: React.FC = () => {
             <div>
               <img
                 className={css.personalOfficeImg}
-                src="/src/img/people-2x.jpg"
+                src={person}
                 alt="person-avatar"
               ></img>
             </div>

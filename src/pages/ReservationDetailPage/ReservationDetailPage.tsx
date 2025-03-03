@@ -3,10 +3,10 @@ import css from "./ReservationDetailPage.module.css";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import Calendar from "../../components/Calendar/Calendar";
-// import kapratyImage from "../../img/Karpaty1-2x.jpg";
-// import kapratyImage2 from "../../img/Group2x.jpg";
-// import kapratyImage3 from "../../img/Karpaty2-2x.jpg";
-// import kapratyImage4 from "../../img/Karpaty3-2x.jpg";
+import kapratyImage from "../../img/Karpaty1-2x.jpg";
+import kapratyImage2 from "../../img/Group2x.jpg";
+import kapratyImage3 from "../../img/Karpaty2-2x.jpg";
+import kapratyImage4 from "../../img/Karpaty3-2x.jpg";
 
 interface ReservationFormValues {
   arrivalDate: string;
@@ -56,6 +56,53 @@ const ReservationDetailPage: React.FC = () => {
           </svg>
           Назад
         </button>
+      </div>
+
+      <div className={css.reservationDetailBox1}>
+        <div className={css.reservationDetailBox12}>
+          <div className={css.reservDetail1}>
+            <img
+              className={css.reservDetailImg}
+              src={kapratyImage2}
+              alt="Karpaty vacation"
+            ></img>
+          </div>
+          <div className={css.reservDetail2}>
+            <img
+              className={css.reservDetailImg1}
+              src={kapratyImage}
+              alt="Karpaty vacation"
+            ></img>
+          </div>
+        </div>
+        <div className={css.reservationDetailBox2}>
+          <div className={css.reservDetail3}>
+            <p className={css.reservDetailText}>
+              Затишні дерев’яні будиночки, які заховались на окраїні лісу,
+              зустрічатимуть Вас чудовим краєвидом на ранкові полонини.
+              <br /> <br /> Ви можете обрати кількість кімнат та місце, яке буде
+              ідеальним для Вас. Територія, на якій базуються будиночки, підійде
+              як і для великих компаній, яким потрібно бути поряд у декількох
+              будинках, так і для пар, які хочуть бути на одинці.
+            </p>
+          </div>
+          <div className={css.reservationImg}>
+            <div className={css.reservDetail4}>
+              <img
+                className={css.reservDetailImg2}
+                src={kapratyImage3}
+                alt="Karpaty vacation"
+              ></img>
+            </div>
+            <div className={css.reservDetail5}>
+              <img
+                className={css.reservDetailImg3}
+                src={kapratyImage4}
+                alt="Karpaty vacation"
+              ></img>
+            </div>
+          </div>
+        </div>
       </div>
 
       <h2 className={css.reservDetailTitle}>Наявність місць</h2>

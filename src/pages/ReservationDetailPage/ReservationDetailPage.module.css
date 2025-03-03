@@ -43,15 +43,10 @@ height: 14px;
 .resLinkGoBack{
     display: flex;
 }
-/* 
+
 .reservationDetailBox1{
-    display: flex;
-    width: 1490px;
-    height: 665px;
-    margin: 0 auto;
-    gap: 8px;
-    margin-bottom: 32px;
-} */
+    display: none;
+}
 
 .reservationDetailBox12{
     display: flex;
@@ -61,16 +56,6 @@ height: 14px;
 .reservDetail1{
     display: flex;
     margin-bottom: 8px;
-}
-
-.reservDetailImg{
-    width: 611px;
-    height: 314px;
-}
-
-.reservDetailImg1 {
-width: 611px;
-    height: 343px;
 }
 
 .reservDetail3{
@@ -88,16 +73,6 @@ width: 611px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-}
-
-.reservDetailImg2{
-    width: 441px;
-        height: 279px;
-}
-
-.reservDetailImg3 {
-    width: 422px;
-    height: 279px;
 }
 
 .reservationImg{
@@ -344,10 +319,31 @@ padding-left: 0;
             padding-top: 15px;
             margin-bottom: 28px;
         }
+        .reservDetailImg {
+            width: 611px;
+            height: 314px;
+        }
+        .reservDetailImg1 {
+             width: 611px;
+             height: 343px;
+        }
+        .reservDetailImg2 {
+            width: 441px;
+            height: 279px;
+        }
+                                
+        .reservDetailImg3 {
+            width: 422px;
+            height: 279px;
+        }
 
 }
 
 @media only screen and (min-width: 1920px) {
+    .reservDetailImg {
+            width: 611px;
+            height: 314px;
+        }
 
     .goBackIcon {
             width: 28px;
@@ -527,6 +523,7 @@ padding-left: 0;
 
     .resDetailBox {
         display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 109px;
     }

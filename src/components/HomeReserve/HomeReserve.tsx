@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import css from "./HomeReserve.module.css";
+// import css from "./HomeReserve.module.css";
 
 const HomeReserve: React.FC = () => {
   const { reservationId } = useParams();

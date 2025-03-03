@@ -65,7 +65,7 @@ text-align: center;
 }
 
 .aboutUsSpanBox1{
-    width: 310px;
+    width: 280px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -74,8 +74,20 @@ text-align: center;
         height: 90px;
         background: #c6c6dc;
     }
+    .aboutUsSpanBox{
+        width: 500px;
+    }
+                .aboutUsBox2 {
+                    padding-left: 34px;
+                    padding-top: 34px;
+                    padding-right: 34px;
+                }
         .aboutUsTitle {
         font-size: 36px;
+        }
+
+        .aboutUsSpanBox1 {
+            width: 520px;
         }
 }
 
@@ -84,7 +96,42 @@ text-align: center;
         padding-left: 227px;
         height: 140px;
         }
+    .aboutUsBox2{
+        padding-left: 74px;
+        padding-top: 74px;
+    }
     .aboutUsTitle {
         font-size: 48px;
                 }
+
+    .aboutUsSpanBox1 {
+        width: 1427px;
+    }
+
 }
+
+                .container {
+                    max-width: 360px;
+                    margin: 0 auto;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+        
+                .container1 {
+                    width: 100%;
+                }
+        
+                @media only screen and (min-width: 768px) {
+                    .container {
+                        max-width: 768px;
+                    }
+        
+                }
+        
+                @media only screen and (min-width: 1920px) {
+                    .container {
+                        max-width: 1920px;
+                        padding-left: 218px;
+                        padding-right: 218px;
+                    }
+                }

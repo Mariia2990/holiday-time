@@ -8,21 +8,21 @@ interface Location {
   name: string;
 }
 
-const locations: Location[] = [
-  { id: 1, name: "Незвідана Бакота" },
-  { id: 2, name: "Полонини Карпат" },
-  { id: 3, name: "Автентична Київщина" },
-  { id: 4, name: "Нетипова Одещина" },
-];
+// const locations: Location[] = [
+//   { id: 1, name: "Незвідана Бакота" },
+//   { id: 2, name: "Полонини Карпат" },
+//   { id: 3, name: "Автентична Київщина" },
+//   { id: 4, name: "Нетипова Одещина" },
+// ];
 
 const ReservationPage: React.FC = () => {
 const { reservationId } = useParams<{ reservationId?: string }>();
 const navigate = useNavigate();
 const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
-const [selectedLocation, setSelectedLocation] = useState<Location | null>(null);
+// const [selectedLocation, setSelectedLocation] = useState<Location | null>(null);
 
 const handleLocationSelect = (location: Location) => {
-  setSelectedLocation(location);
+  // setSelectedLocation(location);
   setIsDropdownOpen(false);
   navigate(`/reservation/${location.id}`);
   };

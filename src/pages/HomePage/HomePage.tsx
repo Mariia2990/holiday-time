@@ -2,26 +2,31 @@ import { useState } from "react";
 import css from "./HomePage.module.css";
 import SearchForm from "../../components/SearchForm/SearchForm";
 import { useNavigate } from "react-router-dom";
-import ActiveVacation from "../../img/image2x.jpg"
+import ActiveVacation from "../../img/image2x.jpg";
+import Vacation from "../../img/Group2x.jpg";
+import Bakota from "../../img/Bakota-2x.jpg";
+import Kyiv from "../../img/Kyiv-2x.jpg";
+import Odesa from "../../img/Odesa-2x.jpg";
+
 
 const slides = [
   {
-    img: "/src/img/Group2x.jpg",
+    img: Vacation,
     text: "Полонини Карпат, у селі Орів посеред гір розташувався затишний куточок для незабутніх вражень. Справжні українські гори, власноручне сироваріння на полонині, водоспади та вікові дерева чекають на Вас.",
   },
 
   {
-    img: "/src/img/Bakota-2x.jpg",
+    img: Bakota,
     text: "У Хмельницькій області розташований загублений край -Бакота. Мальовничий каньйон з давньою історією захоплюєсвоїми просторами та незвичною атмосферою. Бджільництво,свіжий мед із польових трав, дотик до природи.",
   },
 
   {
-    img: "/src/img/Kyiv-2x.jpg",
+    img: Kyiv,
     text: "Неподалік центра Києва розташувалось автентичне українське село на території однойменного села Пирогово. Дерев’яні млини, запашний хліб, приготовлений своїми руками, українські пісні та багато іншого чекає на вас уже зараз.",
   },
 
   {
-    img: "/src/img/Odesa-2x.jpg",
+    img: Odesa,
     text: "В Одеській області знаходиться мальовниче містечко Вилкове. Його ще називають «українською Венецією». Вилкове - це містечко на воді, весь в каналах. Розташоване в місці, де зустрічаються річка Дунай і Чорне море. Люди пересуваються переважно човнами. Нетипове українське село не залишить Вас без вражень.",
   },
 ];

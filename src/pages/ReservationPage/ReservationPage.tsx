@@ -5,6 +5,7 @@ import LocationDropdown from "../../components/LocationDropdown/LocationDropdown
 import Karpaty from "../../img/Group2x.jpg";
 import Kyiv from "../../img/Kyiv-2x.jpg";
 import Odesa from "../../img/Odesa-2x.jpg";
+import Bakota from "../../img/Bakota-2x.jpg";
 
 interface Location {
   id: number;
@@ -74,7 +75,7 @@ const handleLocationSelect = (location: Location) => {
                 <div className={css.reserveHouseBakotaBox}>
                   <img
                     className={css.bakotaImg}
-                    src="/src/img/Bakota-2x.jpg"
+                    src={Bakota}
                     alt="Bakota Vacation"
                   />
                 </div>

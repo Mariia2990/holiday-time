@@ -26,7 +26,7 @@ justify-content: space-between;
     border: 2px solid #fff;
     width: 0px;
     height: 59px;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
@@ -162,9 +162,6 @@ justify-content: space-between;
     width: 50px;
         }
 
-    .link {
-        font-size: 20px;
-    }
 
 .langButton {
     background: none;
@@ -181,7 +178,7 @@ justify-content: space-between;
         width: 150px;
         height: 50px;
         margin-right: 20px;
-        margin-left: 20px
+        /* margin-left: 20px */
     }
 
         .navigationContainer {
@@ -195,7 +192,7 @@ justify-content: space-between;
         }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1920px) {
     .languageSwitcher1 {
         gap: 8px;
         margin-left: 64px;
@@ -226,7 +223,6 @@ justify-content: space-between;
     width: 178px;
     height: 70px;
     margin-right: 292px;
-    margin-left: 138px
 }
 
 .navigationContainer {

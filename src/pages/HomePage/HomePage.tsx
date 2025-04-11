@@ -7,7 +7,7 @@ import Vacation from "../../img/Group2x.jpg";
 import Bakota from "../../img/Bakota-2x.jpg";
 import Kyiv from "../../img/Kyiv-2x.jpg";
 import Odesa from "../../img/Odesa-2x.jpg";
-
+import Container from "../../components/Container/Container";
 
 const slides = [
   {
@@ -33,7 +33,7 @@ const slides = [
 
 const HomePage: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleClick = (): void => {
     console.log("Кнопка 'Переглянути' натиснута!");
@@ -56,7 +56,7 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <div className={css.container}>
+      <Container>
         <div className={css.holidayTime}>
           <h1 className={css.titleHoliday}>HolidayTime</h1>
           <h2 className={css.subTitle}>
@@ -153,7 +153,7 @@ const HomePage: React.FC = () => {
           </div>
         </div>
         <SearchForm onSubmit={handleSearchSubmit} />
-      </div>
+      </Container>
     </>
   );
 };

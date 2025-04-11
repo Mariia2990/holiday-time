@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding-top: 63px; */
     /* max-width: 360px; */
+    margin-top: 23px;
 }
 
 .contactsBox{
@@ -12,7 +13,6 @@ display: flex;
     width: 100%;
     height: 70px;
     background: #c6c6dc;
-    margin-bottom: 23px;
 }
 
 .contactsTitle{
@@ -124,8 +124,8 @@ font-weight: 400;
 .contactsContainer {
     /* max-width: 100%; */
     margin: 0 auto;
-    padding-top: 63px;
-    max-width: 1103px;
+    margin-top: 51px;
+    /* max-width: 1103px; */
 }
 
 .contactsBox {
@@ -135,7 +135,6 @@ font-weight: 400;
     width: 100%;
     height: 140px;
     background: #c6c6dc;
-    margin-bottom: 23px;
 }
 
 .contactsTitle {
@@ -243,28 +242,3 @@ font-weight: 400;
 }
 }
 
-.container {
-    max-width: 360px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.container1 {
-    width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-
-}
-
-@media only screen and (min-width: 1920px) {
-    .container {
-        max-width: 1920px;
-        padding-left: 218px;
-        padding-right: 218px;
-    }
-}

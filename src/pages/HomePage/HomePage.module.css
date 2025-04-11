@@ -569,31 +569,3 @@ width: 12px;
             height: 604px;
         }
 }
-.container {
-    max-width: 360px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-@media only screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-
-    /* #root {
-        max-width: 768px;
-        } */
-}
-
-@media only screen and (min-width: 1920px) {
-    .container {
-        max-width: 1920px;
-        padding-left: 218px;
-        padding-right: 218px;
-    }
-
-    /* #root {
-        max-width: 1920px;
-        } */
-}

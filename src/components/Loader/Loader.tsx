@@ -1,15 +1,16 @@
-import { InfinitySpin } from "react-loader-spinner";
+import { ThreeCircles } from "react-loader-spinner";
 import css from "./Loader.module.css";
+import clsx from "clsx";
 
 interface LoaderProps {
   width?: string;
   color?: string;
 }
 
-const Loader: React.FC<LoaderProps> = ({ width = "200", color = "blue" }) => {
+const Loader: React.FC<LoaderProps> = ({ absolute }) => {
   return (
-    <div className={css.loader} role="status" aria-live="polite">
-      <InfinitySpin width={width} color={color} />
+    <div className={clsx(css.container, { [css.LoaderAbsolute]: absolute })}>
+      <ThreeCircles color="#202846" height={150} width={150} />
     </div>
   );
 };

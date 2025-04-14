@@ -105,6 +105,9 @@ justify-content: space-between;
 }
 
 .langButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     background: none;
     border: none;
     padding: 0;
@@ -114,11 +117,11 @@ justify-content: space-between;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-.langButton:hover {
+.linkLng:hover {
     background: #c4c4c41a;
 }
 
-.langButton:focus {
+.linkLng:focus {
     outline: none;
     background: rgba(196, 196, 196, 0.2);
 }

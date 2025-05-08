@@ -31,27 +31,27 @@ const PersonalOffice: React.FC = () => {
 
           <div className={css.personalOfficeBox3}>
             <div className={css.personalOfficeBd}>
-              <p className={css.personalOfficeText}>Петров Іван Іванович</p>
+              <p className={css.personalOfficeText}></p>
             </div>
             <span className={css.personalOfficeSpan}></span>
             <div className={css.personalOfficeBd}>
               <p className={css.personalOfficeText}>
                 Стать:{" "}
-                <span className={css.personalOfficeTextSpan}>чоловіча</span>
+                <span className={css.personalOfficeTextSpan}></span>
               </p>
             </div>
             <span className={css.personalOfficeSpan}></span>
             <div className={css.personalOfficeBd}>
               <p className={css.personalOfficeText}>
                 Дата народження:{" "}
-                <span className={css.personalOfficeTextSpan}>10.02.1998</span>
+                <span className={css.personalOfficeTextSpan}></span>
               </p>
             </div>
             <span className={css.personalOfficeSpan}></span>
             <div className={css.personalOfficeBd}>
               <p className={css.personalOfficeText}>
                 Мобільний телефон:{" "}
-                <span className={css.personalOfficeTextSpan}>10.02.1998</span>
+                <span className={css.personalOfficeTextSpan}></span>
               </p>
             </div>
             <span className={css.personalOfficeSpan}></span>
@@ -60,7 +60,7 @@ const PersonalOffice: React.FC = () => {
                 Ел.пошта:{" "}
                 <span className={css.personalOfficeTextSpan}>
                   {" "}
-                  petrov@gmail.com
+                  
                 </span>
               </p>
             </div>

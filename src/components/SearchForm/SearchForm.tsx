@@ -2,6 +2,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { FC } from "react";
 import css from "./SearchForm.module.css";
+import { toast } from "react-toastify";
 
 interface Contact {
   query: string;
@@ -34,36 +35,37 @@ const SearchForm: FC<SearchFormProps> = ({
     number: "",
   };
 
-  const onSearchSubmit = (
-    values: { query: string; number: string },
-    actions: any
-  ) => {
-    const trimmedQuery = values.query.trim();
-    const trimmedNumber = values.number.trim();
+const onSearchSubmit = (
+  values: { query: string; number: string },
+  actions: any
+) => {
+  const trimmedQuery = values.query.trim();
+  const trimmedNumber = values.number.trim();
 
-    if (!trimmedQuery) {
-      actions.setErrors({ query: "Search query cannot be empty" });
-      return;
-    }
+  if (!trimmedQuery) {
+    actions.setErrors({ query: "Search query cannot be empty" });
+    return;
+  }
 
-    const isDuplicate = contacts.some(
-      (contact) =>
-        contact.query.toLowerCase() === trimmedQuery.toLowerCase() ||
-        contact.number === trimmedNumber
-    );
+  const isDuplicate = contacts.some(
+    (contact) =>
+      contact.query.toLowerCase() === trimmedQuery.toLowerCase() ||
+      contact.number === trimmedNumber
+  );
 
-    if (isDuplicate) {
-      actions.setErrors({
-        query: "Contact with this name or number already exists",
-        number: "Contact with this name or number already exists",
-      });
-      return;
-    }
+  if (isDuplicate) {
+    actions.setErrors({
+      query: "Contact with this name or number already exists",
+      number: "Contact with this name or number already exists",
+    });
+    return;
+  }
 
-    onSubmit(trimmedQuery, trimmedNumber);
-    actions.setSubmitting(false);
-    actions.resetForm();
-  };
+  onSubmit(trimmedQuery, trimmedNumber);
+  toast.success("Виклик успішно запрошено!");
+  actions.setSubmitting(false);
+  actions.resetForm();
+};
 
   return (
     <div className={css.searchForm}>

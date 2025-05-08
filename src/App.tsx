@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import ModalHeader from "./components/ModalHeader/ModalHeader";
+import { ToastContainer } from "react-toastify";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 const AboutUsPage = lazy(() => import("./pages/AboutUsPage/AboutUsPage"));
@@ -46,6 +47,7 @@ const App = () => {
 
       <Footer />
       <ScrollToTopButton />
+      <ToastContainer />
     </>
   );
 };

@@ -18,5 +18,15 @@
   "placeholderName": "Enter your name",
   "placeholderTel": "Enter phone number",
   "feedbackTitle": "Feedback",
-  "successToast": "Call requested successfully!"
+  "successToast": "Call requested successfully!",
+  "aboutUsSpan": "Rest, emotions, impressions, atypical routes, incredible locations - it's all about rural eco-tourism in Ukraine",
+  "aboutUsText": "Our team has collected the most colorful places in our country just for you.",
+  "aboutUsSpanBox1": "The mission of our company is to give unforgettable impressions and show Ukraine from a different side. Walk with you along forest trails to eat fresh Carpathian cheese. Dive into the canyon and see the village of Bakota submerged under the weight of years. Ride gondolas in Ukrainian Venice",
+  "aboutUsSpanBox2": "Let's get to know Ukraine together!",
+  "resTitle": "Book a house",
+  "reservText": "Choose a location",
+  "location_1": "Bakota",
+  "location_2": "Carpathians",
+  "location_3": "Kyiv",
+  "location_4": "Odesa region"
 }

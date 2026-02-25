@@ -6,27 +6,20 @@ import Karpaty from "../../img/Group2x.jpg";
 import Kyiv from "../../img/Kyiv-2x.jpg";
 import Odesa from "../../img/Odesa-2x.jpg";
 import Bakota from "../../img/Bakota-2x.jpg";
+import { useTranslation } from "react-i18next";
 
 interface Location {
   id: number;
   name: string;
 }
 
-// const locations: Location[] = [
-//   { id: 1, name: "Незвідана Бакота" },
-//   { id: 2, name: "Полонини Карпат" },
-//   { id: 3, name: "Автентична Київщина" },
-//   { id: 4, name: "Нетипова Одещина" },
-// ];
-
 const ReservationPage: React.FC = () => {
 const { reservationId } = useParams<{ reservationId?: string }>();
 const navigate = useNavigate();
 const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
-// const [selectedLocation, setSelectedLocation] = useState<Location | null>(null);
+  const { t } = useTranslation();
 
 const handleLocationSelect = (location: Location) => {
-  // setSelectedLocation(location);
   setIsDropdownOpen(false);
   navigate(`/reservation/${location.id}`);
   };
@@ -37,13 +30,13 @@ const handleLocationSelect = (location: Location) => {
         <>
           <div className={css.container1}>
             <div className={css.reservationBox}>
-              <h2 className={css.resTitle}>Забронювати будиночок</h2>
+              <h2 className={css.resTitle}>{t("resTitle")}</h2>
             </div>
           </div>
           <div className={css.container}>
             <div className={css.reservationBox2}>
               <div className={css.subReserve}>
-                <h3 className={css.reservText}>Оберіть місцерозташування</h3>
+                <h3 className={css.reservText}>{t("resTitle")}</h3>
               </div>
               <div className={css.iconRect}>
                 <button

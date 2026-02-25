@@ -1,35 +1,32 @@
+import { useTranslation } from "react-i18next";
 import css from "./LocationDropdown.module.css";
 import { useState } from "react";
 
 interface Location {
   id: number;
-  name: string;
 }
 
 interface LocationDropdownProps {
   onSelect: (location: Location) => void;
 }
 
-const locations: Location[] = [
-  { id: 1, name: "Бакота" },
-  { id: 2, name: "Карпати" },
-  { id: 3, name: "Київ" },
-  { id: 4, name: "Одеська область" },
-];
+const locations: Location[] = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
 
 const LocationDropdown: React.FC<LocationDropdownProps> = ({ onSelect }) => {
-  const [selected, setSelected] = useState<string>(""); 
+  const [selectedId, setSelectedId] = useState<number | null>(null);
+  const { t } = useTranslation();
 
   const handleSelect = (location: Location) => {
-    setSelected(location.name);
+    setSelectedId(location.id); 
     onSelect(location);
   };
 
   return (
     <>
       <button className={css.dropdownButton}>
-        {selected || ""}
+        {selectedId ? t(`location_${selectedId}`) : t("location_placeholder")}
       </button>
+
       <div className={css.dropdownContent}>
         {locations.map((location) => (
           <button
@@ -37,7 +34,7 @@ const LocationDropdown: React.FC<LocationDropdownProps> = ({ onSelect }) => {
             key={location.id}
             onClick={() => handleSelect(location)}
           >
-            {location.name}
+            {t(`location_${location.id}`)}
           </button>
         ))}
       </div>

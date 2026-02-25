@@ -3,6 +3,7 @@ import * as Yup from "yup";
 import { FC } from "react";
 import css from "./SearchForm.module.css";
 import { toast } from "react-toastify";
+import { useTranslation } from "react-i18next";
 
 interface Contact {
   query: string;
@@ -34,6 +35,8 @@ const SearchForm: FC<SearchFormProps> = ({
     query: initialQuery,
     number: "",
   };
+
+  const { t } = useTranslation();
 
 const onSearchSubmit = (
   values: { query: string; number: string },
@@ -79,13 +82,13 @@ const onSearchSubmit = (
           <Form className={css.form}>
             <div className={css.labelWrapper}>
               <label htmlFor="query" className={css.label}>
-                Ім'я
+                {t("name")}
               </label>
               <Field
                 className={css.field}
                 type="text"
                 name="query"
-                placeholder="Введіть ім'я"
+                placeholder={t("placeholderName")}
               />
               <ErrorMessage
                 name="query"
@@ -95,13 +98,13 @@ const onSearchSubmit = (
             </div>
             <div className={css.labelWrapper}>
               <label htmlFor="number" className={css.label}>
-                Номер телефону
+                {t("tel")}
               </label>
               <Field
                 className={css.field}
                 type="tel"
                 name="number"
-                placeholder="Введіть номер телефону"
+                placeholder={t("placeholderTel")}
                 required
               />
               <ErrorMessage
@@ -115,7 +118,7 @@ const onSearchSubmit = (
               className={css.buttonForm}
               disabled={isSubmitting}
             >
-              Запросити виклик
+              {t("buttonSubmit")}
             </button>
           </Form>
         )}

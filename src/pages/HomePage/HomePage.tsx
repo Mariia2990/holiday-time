@@ -8,33 +8,21 @@ import Bakota from "../../img/Bakota-2x.jpg";
 import Kyiv from "../../img/Kyiv-2x.jpg";
 import Odesa from "../../img/Odesa-2x.jpg";
 import Container from "../../components/Container/Container";
+import { useTranslation } from "react-i18next";
 
 const slides = [
-  {
-    img: Vacation,
-    text: "Полонини Карпат, у селі Орів посеред гір розташувався затишний куточок для незабутніх вражень. Справжні українські гори, власноручне сироваріння на полонині, водоспади та вікові дерева чекають на Вас.",
-  },
-
-  {
-    img: Bakota,
-    text: "У Хмельницькій області розташований загублений край -Бакота. Мальовничий каньйон з давньою історією захоплюєсвоїми просторами та незвичною атмосферою. Бджільництво,свіжий мед із польових трав, дотик до природи.",
-  },
-
-  {
-    img: Kyiv,
-    text: "Неподалік центра Києва розташувалось автентичне українське село на території однойменного села Пирогово. Дерев’яні млини, запашний хліб, приготовлений своїми руками, українські пісні та багато іншого чекає на вас уже зараз.",
-  },
-
-  {
-    img: Odesa,
-    text: "В Одеській області знаходиться мальовниче містечко Вилкове. Його ще називають «українською Венецією». Вилкове - це містечко на воді, весь в каналах. Розташоване в місці, де зустрічаються річка Дунай і Чорне море. Люди пересуваються переважно човнами. Нетипове українське село не залишить Вас без вражень.",
-  },
+  { img: Vacation, id: 1 },
+  { img: Bakota, id: 2 },
+  { img: Kyiv, id: 3 },
+  { img: Odesa, id: 4 },
 ];
 
 const HomePage: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const navigate = useNavigate();
 
+  const { t } = useTranslation();
+  
   const handleClick = (): void => {
     console.log("Кнопка 'Переглянути' натиснута!");
     navigate("/reservation");
@@ -58,16 +46,18 @@ const HomePage: React.FC = () => {
     <>
       <Container>
         <div className={css.holidayTime}>
-          <h1 className={css.titleHoliday}>HolidayTime</h1>
+          <h1 className={css.titleHoliday}>{t("welcome_message")}</h1>
           <h2 className={css.subTitle}>
-            Автентичний відпочинок серед українського колориту
+            {t("description")}
             <span className={css.spanTitle}>!</span>
           </h2>
         </div>
 
         <div className={css.reserveContainer}>
           <div className={css.boxForText}>
-            <p className={css.textReserve}>{slides[activeIndex].text}</p>
+            <p className={css.textReserve}>
+              {t(`buttonDescription${slides[activeIndex].id}`)}
+            </p>
           </div>
           <button className={css.arrowLeft} onClick={prevSlide}>
             ❮
@@ -102,7 +92,7 @@ const HomePage: React.FC = () => {
 
           <div className={css.containerBtnRes}>
             <button className={css.buttonRes} onClick={handleClick}>
-              Переглянути
+              {t("buttonReview")}
               <span className={css.arrow}>
                 <svg
                   className={css.iconArrow}
@@ -145,10 +135,7 @@ const HomePage: React.FC = () => {
               />
             </div>
             <div className={css.activeVacationTxt}>
-              <p className={css.txtVacantion}>
-                Активний відпочинок у нетипових локаціях. Незаймана природа та
-                місцевий колорит подарують Вам незабутні враження.
-              </p>
+              <p className={css.txtVacantion}>{t("active_vacation_text")}</p>
             </div>
           </div>
         </div>

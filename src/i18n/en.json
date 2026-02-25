@@ -3,5 +3,20 @@
   "about": "About Us",
   "reservation": "Reservation",
   "contacts": "Contacts",
-  "office": "Account"
+  "office": "Account",
+  "welcome_message": "Holiday Time",
+  "description": "Authentic vacation amidst Ukrainian flavor!",
+  "buttonReview": "Review",
+  "buttonDescription1": "The Carpathian valleys, in the village of Oriv, a cozy corner for unforgettable experiences is located in the middle of the mountains. Real Ukrainian mountains, homemade cheese making in the valley, waterfalls and centuries-old trees are waiting for you.",
+  "buttonDescription2": "In Khmelnytskyi region there is a lost land - Bakota. A picturesque canyon with an ancient history captivates with its vastness and unusual atmosphere. Beekeeping, fresh honey from wild herbs, a touch of nature.",
+  "buttonDescription3": "Not far from the center of Kyiv, an authentic Ukrainian village is located in the village of the same name, Pirogovo. Wooden mills, fragrant homemade bread, Ukrainian songs, and much more await you right now.",
+  "buttonDescription4": "In the Odessa region there is a picturesque town of Vylkove. It is also called the Ukrainian Venice. Vylkove is a town on the water, all in canals. Located at the place where the Danube River and the Black Sea meet. People travel mainly by boats. An atypical Ukrainian village will not leave you without impressions.",
+  "active_vacation_text": "Active recreation in atypical locations. Untouched nature and local flavor will give you unforgettable impressions.",
+  "name": "Name",
+  "tel": "Phone number",
+  "buttonSubmit": "Invite challenge",
+  "placeholderName": "Enter your name",
+  "placeholderTel": "Enter phone number",
+  "feedbackTitle": "Feedback",
+  "successToast": "Call requested successfully!"
 }

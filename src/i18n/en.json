@@ -23,10 +23,19 @@
   "aboutUsText": "Our team has collected the most colorful places in our country just for you.",
   "aboutUsSpanBox1": "The mission of our company is to give unforgettable impressions and show Ukraine from a different side. Walk with you along forest trails to eat fresh Carpathian cheese. Dive into the canyon and see the village of Bakota submerged under the weight of years. Ride gondolas in Ukrainian Venice",
   "aboutUsSpanBox2": "Let's get to know Ukraine together!",
-  "resTitle": "Book a house",
+  "resTitle": "Reserve a house",
   "reservText": "Choose a location",
   "location_1": "Bakota",
   "location_2": "Carpathians",
   "location_3": "Kyiv",
-  "location_4": "Odesa region"
+  "location_4": "Odesa region",
+  "titleBakota": "Unexplored Bakota",
+  "textBakota": "In Khmelnytskyi region there is a lost land - Bakota. A picturesque canyon with an ancient history captivates with its spaces and unusual atmosphere. Beekeeping, fresh honey from wild herbs, a touch of nature.",
+  "buttonReserve": "More details",
+  "titleCarpaty": "Polonyny of the Carpathians",
+  "textCarpaty": "The Carpathian valleys, in the village of Oriv, a cozy corner for unforgettable experiences is located in the middle of the mountains. Real Ukrainian mountains, homemade cheese making in the valley, waterfalls and centuries-old trees are waiting for you.",
+  "titleKyiv": "Authentic Kyiv region",
+  "textKyiv": "Not far from the center of Kyiv, an authentic Ukrainian village is located in the village of the same name, Pyrohovo. Wooden mills, fragrant homemade bread, Ukrainian songs and much more await you right now.",
+  "titleOdesa": "Atypical Odessa region",
+  "textOdesa": "In the Odessa region there is a picturesque townVylkove. It is also called the Ukrainian Venice. Vylkove is a town on the water, all in canals. Located in the place where the Danube River and the Black Sea meet. People travel mainly by boats. An atypical Ukrainian village will not leave you without impressions."
 }

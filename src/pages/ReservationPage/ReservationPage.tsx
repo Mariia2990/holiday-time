@@ -10,8 +10,15 @@ import { useTranslation } from "react-i18next";
 
 interface Location {
   id: number;
-  name: string;
+  // name: string;
 }
+
+const reservationData = [
+  { id: 1, img: Bakota },
+  { id: 2, img: Karpaty },
+  { id: 3, img: Kyiv },
+  { id: 4, img: Odesa },
+];
 
 const ReservationPage: React.FC = () => {
 const { reservationId } = useParams<{ reservationId?: string }>();
@@ -30,7 +37,7 @@ const handleLocationSelect = (location: Location) => {
         <>
           <div className={css.container1}>
             <div className={css.reservationBox}>
-              <h2 className={css.resTitle}>{t("resTitle")}</h2>
+              <h2 className={css.resTitle}>{t("reservation")}</h2>
             </div>
           </div>
           <div className={css.container}>
@@ -74,16 +81,11 @@ const handleLocationSelect = (location: Location) => {
                 </div>
                 <div className={css.reserveHouseBakotaBox1}>
                   <div className={css.titleBakotaBox}>
-                    <h3 className={css.titleBakota}>Незвідана Бакота</h3>
+                    <h3 className={css.titleBakota}>{t("titleBakota")}</h3>
                   </div>
                   <span className={css.lineBakota}></span>
                   <div className={css.reserveHouseBakotaBox2}>
-                    <p className={css.textBakota}>
-                      У Хмельницькій області розташований загублений край -
-                      Бакота. Мальовничий каньйон з давньою історією захоплює
-                      своїми просторами та незвичною атмосферою. Бджільництво,
-                      свіжий мед із польових трав, дотик до природи.
-                    </p>
+                    <p className={css.textBakota}>{t("textBakota")}</p>
                   </div>
                 </div>
 
@@ -108,7 +110,7 @@ const handleLocationSelect = (location: Location) => {
                     className={css.buttonReserve}
                     onClick={() => navigate("/reservation/1")}
                   >
-                    Детальніше
+                    {t("buttonReserve")}
                   </button>
                 </div>
               </div>
@@ -125,16 +127,11 @@ const handleLocationSelect = (location: Location) => {
                 </div>
                 <div className={css.reserveHouseBakotaBox1}>
                   <div className={css.titleBakotaBox}>
-                    <h3 className={css.titleBakota}>Полонини Карпат </h3>
+                    <h3 className={css.titleBakota}>{t("titleCarpaty")}</h3>
                   </div>
                   <span className={css.lineBakota}></span>
                   <div className={css.reserveHouseBakotaBox2}>
-                    <p className={css.textBakota}>
-                      Полонини Карпат, у селі Орів посеред гір розташувався
-                      затишний куточок для незабутніх вражень. Справжні
-                      українські гори, власноручне сироваріння на полонині,
-                      водоспади та вікові дерева чекають на Вас.
-                    </p>
+                    <p className={css.textBakota}>{t("textCarpaty")}</p>
                   </div>
                 </div>
 
@@ -159,7 +156,7 @@ const handleLocationSelect = (location: Location) => {
                     className={css.buttonReserve}
                     onClick={() => navigate("/reservation/2")}
                   >
-                    Детальніше
+                    {t("buttonReserve")}
                   </button>
                 </div>
               </div>
@@ -176,16 +173,11 @@ const handleLocationSelect = (location: Location) => {
                 </div>
                 <div className={css.reserveHouseBakotaBox1}>
                   <div className={css.titleBakotaBox}>
-                    <h3 className={css.titleBakota}>Автентична Київщина</h3>
+                    <h3 className={css.titleBakota}>{t("titleKyiv")}</h3>
                   </div>
                   <span className={css.lineBakota}></span>
                   <div className={css.reserveHouseBakotaBox2}>
-                    <p className={css.textBakota}>
-                      Неподалік центра Києва розташувалось автентичне українське
-                      село на території однойменного села Пирогово. Дерев’яні
-                      млини, запашний хліб, приготовлений своїми руками,
-                      українські пісні та багато іншого чекає на вас уже зараз.
-                    </p>
+                    <p className={css.textBakota}>{t("textKyiv")}</p>
                   </div>
                 </div>
 
@@ -210,7 +202,7 @@ const handleLocationSelect = (location: Location) => {
                     className={css.buttonReserve}
                     onClick={() => navigate("/reservation/3")}
                   >
-                    Детальніше
+                    {t("buttonReserve")}
                   </button>
                 </div>
               </div>
@@ -227,18 +219,11 @@ const handleLocationSelect = (location: Location) => {
                 </div>
                 <div className={css.reserveHouseBakotaBox1}>
                   <div className={css.titleBakotaBox}>
-                    <h3 className={css.titleBakota}>Нетипова Одещина</h3>
+                    <h3 className={css.titleBakota}>{t("titleOdesa")}</h3>
                   </div>
                   <span className={css.lineBakota}></span>
                   <div className={css.reserveHouseBakotaBox2}>
-                    <p className={css.textBakota}>
-                      В Одеській області знаходиться мальовниче містечко
-                      Вилкове. Його ще називають «українською Венецією». Вилкове
-                      - це містечко на воді, весь в каналах. Розташоване в
-                      місці, де зустрічаються річка Дунай і Чорне море. Люди
-                      пересуваються переважно човнами. Нетипове українське село
-                      не залишить Вас без вражень.
-                    </p>
+                    <p className={css.textBakota}>{t("textOdesa")}</p>
                   </div>
                 </div>
 
@@ -263,7 +248,7 @@ const handleLocationSelect = (location: Location) => {
                     className={css.buttonReserve}
                     onClick={() => navigate("/reservation/4")}
                   >
-                    Детальніше
+                    {t("buttonReserve")}
                   </button>
                 </div>
               </div>

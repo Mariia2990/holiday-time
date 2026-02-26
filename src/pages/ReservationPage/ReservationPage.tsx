@@ -13,13 +13,6 @@ interface Location {
   // name: string;
 }
 
-const reservationData = [
-  { id: 1, img: Bakota },
-  { id: 2, img: Karpaty },
-  { id: 3, img: Kyiv },
-  { id: 4, img: Odesa },
-];
-
 const ReservationPage: React.FC = () => {
 const { reservationId } = useParams<{ reservationId?: string }>();
 const navigate = useNavigate();

@@ -46,5 +46,12 @@
   "contactsInfo4": "sun",
   "contactsLabe3": "E-mail",
   "contactsLabel4": "Office address",
-  "contactsInfo5": "Kyiv, Malevicha St., 4"
+  "contactsInfo5": "Kyiv, Malevicha St., 4",
+  "personalOfficeTitle": "Personal office",
+  "personalOfficeBtn": "Change avatar",
+  "personalOfficeBtn1": "Settings",
+  "personalOfficeText1": "Sex:",
+  "personalOfficeText2": "Date of birth:",
+  "personalOfficeText3": "Mobile phone:",
+  "personalOfficeText4": "Еmail:"
 }

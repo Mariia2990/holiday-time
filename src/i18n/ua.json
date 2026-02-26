@@ -46,5 +46,12 @@
   "contactsInfo4": "нд",
   "contactsLabe3": "Ел. пошта",
   "contactsLabel4": "Адреса офісу",
-  "contactsInfo5": "м. Київ, вул. Малевича, буд. 4"
+  "contactsInfo5": "м. Київ, вул. Малевича, буд. 4",
+  "personalOfficeTitle": "Особистий кабінет",
+  "personalOfficeBtn": "Змінити аватар",
+  "personalOfficeBtn1": "Налаштування",
+  "personalOfficeText1": "Стать:",
+  "personalOfficeText2": "Дата народження:",
+  "personalOfficeText3": "Мобільний телефон:",
+  "personalOfficeText4": "Ел.пошта:"
 }

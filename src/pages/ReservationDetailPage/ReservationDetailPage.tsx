@@ -7,6 +7,7 @@ import kapratyImage from "../../img/Karpaty1-2x.jpg";
 import kapratyImage2 from "../../img/Group2x.jpg";
 import kapratyImage3 from "../../img/Karpaty2-2x.jpg";
 import kapratyImage4 from "../../img/Karpaty3-2x.jpg";
+import { useTranslation } from "react-i18next";
 
 interface ReservationFormValues {
   arrivalDate: string;
@@ -32,11 +33,12 @@ const validationSchema = Yup.object().shape({
 
 const ReservationDetailPage: React.FC = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <>
       <div className={css.reservationDetailBox}>
-        <h2 className={css.resDetailTitle}>Бронювання будиночка в Карпатах</h2>
+        <h2 className={css.resDetailTitle}>{t("resDetailTitle")}</h2>
       </div>
 
       <div className={css.resLinkGoBack}>
@@ -54,7 +56,7 @@ const ReservationDetailPage: React.FC = () => {
               fill="white"
             />
           </svg>
-          Назад
+          {t("goBackIcon")}
         </button>
       </div>
 
@@ -77,14 +79,7 @@ const ReservationDetailPage: React.FC = () => {
         </div>
         <div className={css.reservationDetailBox2}>
           <div className={css.reservDetail3}>
-            <p className={css.reservDetailText}>
-              Затишні дерев’яні будиночки, які заховались на окраїні лісу,
-              зустрічатимуть Вас чудовим краєвидом на ранкові полонини.
-              <br /> <br /> Ви можете обрати кількість кімнат та місце, яке буде
-              ідеальним для Вас. Територія, на якій базуються будиночки, підійде
-              як і для великих компаній, яким потрібно бути поряд у декількох
-              будинках, так і для пар, які хочуть бути на одинці.
-            </p>
+            <p className={css.reservDetailText}>{t("reservDetailText")}</p>
           </div>
           <div className={css.reservationImg}>
             <div className={css.reservDetail4}>
@@ -105,7 +100,7 @@ const ReservationDetailPage: React.FC = () => {
         </div>
       </div>
 
-      <h2 className={css.reservDetailTitle}>Наявність місць</h2>
+      <h2 className={css.reservDetailTitle}>{t("reservDetailTitle")}</h2>
       <div className={css.seatReservation}>
         <Formik<ReservationFormValues>
           initialValues={{
@@ -124,7 +119,7 @@ const ReservationDetailPage: React.FC = () => {
             <Form className={css.reservDetailForm}>
               <div className={css.resDetailBox}>
                 <div className={css.labelDetailWrapper}>
-                  <label className={css.labelDetail}>Дата заїзду</label>
+                  <label className={css.labelDetail}>{t("labelDetail")}</label>
                   <Calendar
                     selectedDate={
                       values.arrivalDate ? new Date(values.arrivalDate) : null
@@ -133,7 +128,7 @@ const ReservationDetailPage: React.FC = () => {
                   />
                 </div>
                 <div className={css.labelDetailWrapper}>
-                  <label className={css.labelDetail}>Дата виїзду</label>
+                  <label className={css.labelDetail}>{t("labelDetail1")}</label>
                   <Calendar
                     selectedDate={
                       values.departureDate
@@ -144,13 +139,13 @@ const ReservationDetailPage: React.FC = () => {
                   />
                 </div>
                 <button type="submit" className={css.btnDetail}>
-                  Перевірити наявність вільних місць
+                  {t("btnDetail")}
                 </button>
               </div>
 
               <div className={css.detailRoom}>
                 <div className={css.counterBox}>
-                  <p className={css.detailRoomText}>Номери</p>
+                  <p className={css.detailRoomText}>{t("detailRoomText")}</p>
                   <Field
                     type="number"
                     name="rooms"
@@ -168,7 +163,7 @@ const ReservationDetailPage: React.FC = () => {
                 </div>
 
                 <div className={css.counterBox}>
-                  <p className={css.detailRoomText}>Дорослі</p>
+                  <p className={css.detailRoomText}>{t("detailRoomText1")}</p>
                   <Field
                     type="number"
                     name="adults"
@@ -186,7 +181,7 @@ const ReservationDetailPage: React.FC = () => {
                 </div>
 
                 <div className={css.counterBox}>
-                  <p className={css.detailRoomText}>Діти</p>
+                  <p className={css.detailRoomText}>{t("detailRoomText2")}</p>
                   <Field
                     type="number"
                     name="children"

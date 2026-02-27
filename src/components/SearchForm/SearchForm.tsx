@@ -72,7 +72,7 @@ const onSearchSubmit = (
 
   return (
     <div className={css.searchForm}>
-      <p className={css.feedbackText}>Зворотній зв'язок</p>
+      <p className={css.feedbackText}>{t("feedbackTitle")}</p>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}

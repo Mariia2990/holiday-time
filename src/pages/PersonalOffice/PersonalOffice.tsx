@@ -96,7 +96,7 @@ const PersonalOffice: React.FC = () => {
               <div className={css.personalOfficeBd}>
                 <p className={css.personalOfficeText}>
                   {t("personalOfficeText4")}{" "}
-                  <span className={css.personalOfficeTextSpan}> </span>
+                  <span className={css.personalOfficeTextSpan}></span>
                 </p>
               </div>
             </div>

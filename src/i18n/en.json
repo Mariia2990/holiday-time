@@ -53,5 +53,15 @@
   "personalOfficeText1": "Sex:",
   "personalOfficeText2": "Date of birth:",
   "personalOfficeText3": "Mobile phone:",
-  "personalOfficeText4": "Еmail:"
+  "personalOfficeText4": "Еmail:",
+  "resDetailTitle": "Booking a house in the Carpathians",
+  "goBackIcon": "Back",
+  "reservDetailText": "Cozy wooden houses, hidden on the edge of the forest, will greet you with a magnificent view of the morning meadows. You can choose the number of rooms and the location that will be ideal for you. The territory on which the houses are based is suitable for both large companies that need to be close together in several houses, and for couples who want to be alone.",
+  "reservDetailTitle": "Availability of seats",
+  "labelDetail": "Check-in date",
+  "labelDetail1": "Departure date",
+  "btnDetail": "Check availability",
+  "detailRoomText": "Rooms",
+  "detailRoomText1": "Adults",
+  "detailRoomText2": "Children"
 }

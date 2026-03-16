@@ -24,7 +24,9 @@ const LocationDropdown: React.FC<LocationDropdownProps> = ({ onSelect }) => {
   return (
     <>
       <button className={css.dropdownButton}>
-        {selectedId ? t(`location_${selectedId}`) : t("location_placeholder")}
+        {selectedId
+          ? t(`location_${selectedId}`)
+          : null}
       </button>
 
       <div className={css.dropdownContent}>

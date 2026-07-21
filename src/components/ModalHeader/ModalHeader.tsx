@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import css from "./ModalHeader.module.css";
 import { IoClose } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 interface ModalHeaderProps {
   isOpen: boolean;
@@ -10,8 +11,7 @@ interface ModalHeaderProps {
 }
 
 const ModalHeader: React.FC<ModalHeaderProps> = ({ isOpen, onClose }) => {
-  const location = useLocation(); 
-
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (isOpen) {
@@ -25,12 +25,11 @@ const ModalHeader: React.FC<ModalHeaderProps> = ({ isOpen, onClose }) => {
     };
   }, [isOpen]);
 
-
   useEffect(() => {
     if (isOpen) {
       onClose();
     }
-  }, [location.pathname]); 
+  }, [location.pathname]);
 
   const handleNavLinkClick = () => {
     onClose();
@@ -47,19 +46,19 @@ const ModalHeader: React.FC<ModalHeaderProps> = ({ isOpen, onClose }) => {
         </button>
         <nav className={css.nav}>
           <NavLink to="/" onClick={handleNavLinkClick}>
-            Головна
+            {t("home")}
           </NavLink>
           <NavLink to="/about-us" onClick={handleNavLinkClick}>
-            Про нас
+            {t("about")}
           </NavLink>
           <NavLink to="/reservation" onClick={handleNavLinkClick}>
-            Забронювати
+            {t("reservation")}
           </NavLink>
           <NavLink to="/contacts" onClick={handleNavLinkClick}>
-            Контакти
+            {t("contacts")}
           </NavLink>
           <NavLink to="/office" onClick={handleNavLinkClick}>
-            Особистий кабінет
+            {t("office")}
           </NavLink>
         </nav>
       </div>

@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import css from "./ModalHeader.module.css";
 import { IoClose } from "react-icons/io5";
 import { NavLink } from "react-router-dom";

@@ -63,5 +63,14 @@
   "btnDetail": "Перевірити наявність вільних місць",
   "detailRoomText": "Номери",
   "detailRoomText1": "Дорослі",
-  "detailRoomText2": "Діти"
+  "detailRoomText2": "Діти",
+  "modalProfile": "Редагувати профіль",
+  "modalSex": "Стать",
+  "modalSex1": "Не вказано",
+  "modalSex2": "Жіноча",
+  "modalSex3": "Чоловіча",
+  "modalLabel1": "Дата народження",
+  "modalLabel2": "Мобільний телефон",
+  "modalLabel3": "Ел.пошта",
+  "modalSave": "Зберегти"
 }

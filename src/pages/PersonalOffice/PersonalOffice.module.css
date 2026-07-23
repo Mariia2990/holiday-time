@@ -117,6 +117,87 @@ background-color: #484A54;
     font-family: inherit;
     font-size: inherit;
     width: auto;
+    margin-left: 15px;
+}
+
+/* Оверлей (темне тло позаду модалки) */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Модальне вікно*/
+.modalContent {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    width: 90%;
+    max-width: 50%;
+    outline: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modalCloseBtn {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.modalBody {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modalLabel {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+.modalInput,
+.modalSelect {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.modalFooter {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalSaveBtn {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.modalSaveBtn:hover {
+    background-color: #4338ca;
 }
 
 

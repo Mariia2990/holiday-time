@@ -63,5 +63,14 @@
   "btnDetail": "Check availability",
   "detailRoomText": "Rooms",
   "detailRoomText1": "Adults",
-  "detailRoomText2": "Children"
+  "detailRoomText2": "Children",
+  "modalProfile": "Edit profile",
+  "modalSex": "Sex",
+  "modalSex1": "Not specified",
+  "modalSex2": "Women",
+  "modalSex3": "Men",
+  "modalLabel1": "Date of birth",
+  "modalLabel2": "Mobile phone",
+  "modalLabel3": "Email",
+  "modalSave": "Save"
 }
